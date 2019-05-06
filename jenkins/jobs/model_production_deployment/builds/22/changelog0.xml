@@ -1,0 +1,12 @@
+commit aaae76554ef90e3e4138b69079921748d7fa538c
+tree aa0941a55451be89bbddb01784958713f22bbeba
+parent c7f4c4be2610171245abeba9112cfd0b3be4e554
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-03 14:47:49 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-03 14:47:49 +0200
+
+     modif of deploy script and jenkinsfile
+
+
+
+:100644 100644 26d83daa8fa31ff93d13bf64023bbaee5b225255 58582c09eec73ebdb3122546cb073682dbb19626 M	Jenkinsfile
+:100644 100644 7e250e0a0873501598f9482dfd0ca257bd087f3e 6441c808b2e9bbb3a4ff04bf7518bb30a1eaebb1 M	compare_with_prod.py

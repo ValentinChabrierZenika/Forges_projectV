@@ -1,0 +1,91 @@
+Started by GitHub push by ValentinChabrierZenika
+Building in workspace /var/jenkins_home/workspace/test-jenkins
+using credential 6c0e270e-2b58-464f-8e2a-7fe3e328df9a
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ValentinChabrierZenika/hello_world_jenkins # timeout=10
+Fetching upstream changes from https://github.com/ValentinChabrierZenika/hello_world_jenkins
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/ValentinChabrierZenika/hello_world_jenkins +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 23686536e8dceefa0869aae8155f0c68d61bb709 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 23686536e8dceefa0869aae8155f0c68d61bb709
+Commit message: "pull .pkl from artifacts repo"
+ > git rev-list --no-walk d2b94e1ce2776ae7e282889c1b7f086bd10453b8 # timeout=10
+[test-jenkins] $ /bin/sh -xe /tmp/jenkins1144289567255855500.sh
++ docker ps
+CONTAINER ID        IMAGE                                            COMMAND                  CREATED             STATUS              PORTS                                              NAMES
+981c56f079ba        jenkins-docker                                   "/sbin/tini -- /usr/…"   About an hour ago   Up About an hour    0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   youthful_merkle
+13c8510afbde        docker.bintray.io/jfrog/artifactory-oss:latest   "/entrypoint-artifac…"   About an hour ago   Up About an hour    0.0.0.0:8081->8081/tcp                             artifactory-oss
++ docker stop python-server
+python-server
++ docker rm python-server
+python-server
++ docker build -t python-server-1.0 .
+Sending build context to Docker daemon  182.8kB
+Step 1/12 : FROM ubuntu:latest
+ ---> 94e814e2efa8
+Step 2/12 : MAINTAINER Valentin Chabrier "valentin.chabrier@zenika.com"
+ ---> Using cache
+ ---> 8f65dcf9d7b8
+Step 3/12 : RUN apt-get update -y
+ ---> Using cache
+ ---> 55c1d277389e
+Step 4/12 : RUN apt-get install -y python3-pip python3-dev build-essential
+ ---> Using cache
+ ---> 60c23023d290
+Step 5/12 : RUN pip3 install numpy
+ ---> Using cache
+ ---> 75a7677021d0
+Step 6/12 : RUN pip3 install sklearn
+ ---> Using cache
+ ---> d771f61586cd
+Step 7/12 : RUN mkdir models
+ ---> Using cache
+ ---> c6554f1c16d9
+Step 8/12 : COPY . /app
+ ---> 07d591021546
+Step 9/12 : WORKDIR /app
+ ---> Running in 6d79955653b8
+Removing intermediate container 6d79955653b8
+ ---> 547140699734
+Step 10/12 : RUN pip3 install -r requirements.txt
+ ---> Running in 6b9c1c3ec79d
+Collecting Flask==1.0.2 (from -r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/7f/e7/08578774ed4536d3242b14dacb4696386634607af824ea997202cd0edb4b/Flask-1.0.2-py2.py3-none-any.whl (91kB)
+Requirement already satisfied: numpy in /usr/local/lib/python3.6/dist-packages (from -r requirements.txt (line 2))
+Requirement already satisfied: sklearn in /usr/local/lib/python3.6/dist-packages (from -r requirements.txt (line 3))
+Collecting Jinja2>=2.10 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/7f/ff/ae64bacdfc95f27a016a7bed8e8686763ba4d277a78ca76f32659220a731/Jinja2-2.10-py2.py3-none-any.whl (126kB)
+Collecting Werkzeug>=0.14 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/18/79/84f02539cc181cdbf5ff5a41b9f52cae870b6f632767e43ba6ac70132e92/Werkzeug-0.15.2-py2.py3-none-any.whl (328kB)
+Collecting click>=5.1 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+Collecting itsdangerous>=0.24 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
+Requirement already satisfied: scikit-learn in /usr/local/lib/python3.6/dist-packages (from sklearn->-r requirements.txt (line 3))
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.10->Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/b2/5f/23e0023be6bb885d00ffbefad2942bc51a620328ee910f64abe5a8d18dd1/MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl
+Requirement already satisfied: scipy>=0.13.3 in /usr/local/lib/python3.6/dist-packages (from scikit-learn->sklearn->-r requirements.txt (line 3))
+Installing collected packages: MarkupSafe, Jinja2, Werkzeug, click, itsdangerous, Flask
+Successfully installed Flask-1.0.2 Jinja2-2.10 MarkupSafe-1.1.1 Werkzeug-0.15.2 click-7.0 itsdangerous-1.1.0
+Removing intermediate container 6b9c1c3ec79d
+ ---> c7f439a7dea7
+Step 11/12 : ENTRYPOINT ["python3"]
+ ---> Running in a70fba5c1136
+Removing intermediate container a70fba5c1136
+ ---> 3c5032981308
+Step 12/12 : CMD ["app.py"]
+ ---> Running in 47bd2314b543
+Removing intermediate container 47bd2314b543
+ ---> 6dae76d2e84c
+Successfully built 6dae76d2e84c
+Successfully tagged python-server-1.0:latest
++ docker run -d -p 5000:5000 --name python-server python-server-1.0
+93452092f9e4d094eae533584ad4617bc91ff9766020de68f115a6c6327ca9ab
+docker: Error response from daemon: driver failed programming external connectivity on endpoint python-server (3e4d7d64c5aa242ac552170a33baab007de9d80b0390aee9cad1a400b846417d): Error starting userland proxy: Bind for 0.0.0.0:5000 failed: port is already allocated.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

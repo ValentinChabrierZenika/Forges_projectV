@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>last_best_model</repoKey>
+    <path></path>
+    <folder>true</folder>
+  </repoPath>
+  <name></name>
+  <created>1556630624307</created>
+  <lastModified>1556630624307</lastModified>
+  <additionalInfo>
+    <lastUpdated>1556630624307</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

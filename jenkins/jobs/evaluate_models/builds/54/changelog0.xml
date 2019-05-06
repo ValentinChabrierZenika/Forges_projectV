@@ -1,0 +1,12 @@
+commit 94d7aab8aed1b05153831144dd9b8f9f888b96c0
+tree 28082aa1df9818a54a301966e6460c935469f848
+parent e6f77214135516396233911db83f585738951af7
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 14:57:03 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 14:57:03 +0200
+
+    modif jenkinsfile
+
+
+
+:100644 100644 5a1d34a1849ff6f4de53ab3c2fb6637c841f23e2 a429a3702e3dd670947b9a755bcb9efeeba0bed7 M	Jenkinsfile
+:100644 100644 63d9bc3fe02001f2b9a505f57239ebfa1de56cdb e45d5b785aa2b23127c1c2f03fc641afee5be79f M	evaluate_model.py

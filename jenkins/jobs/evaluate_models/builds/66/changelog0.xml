@@ -1,0 +1,12 @@
+commit eeff0ea6ca6fd4229719da0c6ce3548b3c7f0abf
+tree df35fbf07e3d934c2c7a31322d0a2a8d4075573a
+parent 807c18f886a5d600910c4af1728808874e82d16c
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 16:58:10 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 16:58:10 +0200
+
+    test comparison script
+
+
+
+:100644 100644 d54cf06ad4b626ceaa2f4a8448759ebd6aa286ad d59548c9a61c345f88e20208d081f410a361d03f M	Jenkinsfile
+:100644 100644 af418fa5af0d37aca6308253677cf3c2799a82be a52020c3647f1b4140a9528633f2fdb97f185a76 M	compare_models.py

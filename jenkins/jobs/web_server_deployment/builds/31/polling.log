@@ -1,0 +1,12 @@
+Started on Apr 3, 2019 2:37:13 PM
+Started by event from ::ffff:192.30.252.39 ⇒ http://valentinz.pagekite.me:8080/github-webhook/ on Wed Apr 03 14:37:13 UTC 2019
+Using strategy: Default
+[poll] Last Built Revision: Revision d2b94e1ce2776ae7e282889c1b7f086bd10453b8 (refs/remotes/origin/master)
+using credential 6c0e270e-2b58-464f-8e2a-7fe3e328df9a
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git ls-remote -h https://github.com/ValentinChabrierZenika/hello_world_jenkins # timeout=10
+Found 1 remote heads on https://github.com/ValentinChabrierZenika/hello_world_jenkins
+[poll] Latest remote head revision on refs/heads/master is: 23686536e8dceefa0869aae8155f0c68d61bb709
+Done. Took 1.7 sec
+Changes found

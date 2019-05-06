@@ -1,0 +1,11 @@
+commit 8b615255d9cd155bb88814ec3331aa9a2bf933ca
+tree 5d7db96e69626b07c3b4c91a59ad487c1d9febd1
+parent 740d30d768684b1ab2eea9236d9586a6edc8eb9c
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-08 14:26:27 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-08 14:26:27 +0200
+
+    add templates
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 569c160ad3d30ebdad09516b403b749818bfeb87 A	templates/index.html

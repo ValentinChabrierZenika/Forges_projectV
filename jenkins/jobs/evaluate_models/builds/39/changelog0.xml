@@ -1,0 +1,11 @@
+commit ee5dccf1663280a761a1025a97820bff943d8ab9
+tree f39bd382f55f4202ebeb65f60e944bf5ba76776b
+parent f286f9dcc66b7fad059db7db4bedc2203db24a63
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 13:37:30 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 13:37:30 +0200
+
+    modif of jenkinsfile
+
+
+
+:100644 100644 aba3e14b6a8752e77a21e7d847ffd254fac7e39d 38124795de092ea8b42d4966db23357938c326da M	Jenkinsfile

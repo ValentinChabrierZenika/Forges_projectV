@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>ML_models_repo</repoKey>
+    <path>metrics/metrics_data.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>metrics_data.json</name>
+  <created>1556898244619</created>
+  <lastModified>1556898244406</lastModified>
+  <size>91</size>
+  <additionalInfo>
+    <createdBy>admin</createdBy>
+    <modifiedBy>admin</modifiedBy>
+    <lastUpdated>1556898244621</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>5aa2f60f6ae23f655ffc962a8ce1af29a285cbc7</original>
+          <actual>5aa2f60f6ae23f655ffc962a8ce1af29a285cbc7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>fa948b9e869a6f1ef92cb5d3bb95d4a2</original>
+          <actual>fa948b9e869a6f1ef92cb5d3bb95d4a2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e2b0e0c2ebef2814f6c4082d277822ae97cec0f283167b4fb87cf841dc4694fc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

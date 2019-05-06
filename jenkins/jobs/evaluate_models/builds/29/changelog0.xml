@@ -1,0 +1,12 @@
+commit 211990d038e15909bc7e146b4e92f8ee92f86443
+tree 741a34cff416e203262a191ecb015863d9ac47e8
+parent f0ed61b24f6f45604a4c094a21fcae8ad2246c55
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 15:35:29 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 15:35:29 +0200
+
+    add upload of best model
+
+
+
+:100644 100644 7d6d7ff57809e237431606f30f4ea609d100de8b 8366132b3c8d34ceef2c4937464f87c08002b473 M	Jenkinsfile
+:100644 100644 7c23e64ea098f38c71de324009bfe7befdaa35b6 db9d9ac30d2d30aadd7d10c7df42e3fcbbcd5b23 M	compare_models.py

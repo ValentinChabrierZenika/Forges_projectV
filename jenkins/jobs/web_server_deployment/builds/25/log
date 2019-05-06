@@ -1,0 +1,111 @@
+Started by GitHub push by ValentinChabrierZenika
+Building in workspace /var/jenkins_home/workspace/test-jenkins
+using credential 6c0e270e-2b58-464f-8e2a-7fe3e328df9a
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ValentinChabrierZenika/hello_world_jenkins # timeout=10
+Fetching upstream changes from https://github.com/ValentinChabrierZenika/hello_world_jenkins
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/ValentinChabrierZenika/hello_world_jenkins +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a4c3dcfe02579186c1ac9ef15745f7665e7dc35d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a4c3dcfe02579186c1ac9ef15745f7665e7dc35d
+Commit message: "test"
+ > git rev-list --no-walk 4980b153fa5924e6f1dd03a7283bcca64e672a63 # timeout=10
+[test-jenkins] $ /bin/sh -xe /tmp/jenkins1461673601138484437.sh
++ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                              NAMES
+039ade467811        asashiho/ml-jupyter-python3   "jupyter notebook --…"   18 minutes ago      Up 18 minutes       0.0.0.0:6006->6006/tcp, 0.0.0.0:8888->8888/tcp     compassionate_nightingale
+a83aa6c24479        jenkins-docker                "/sbin/tini -- /usr/…"   About an hour ago   Up About an hour    0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   elastic_bhabha
++ docker stop python-server
+python-server
++ docker rm python-server
+python-server
++ docker build -t flask-sample-one .
+Sending build context to Docker daemon  160.8kB
+Step 1/12 : FROM ubuntu:latest
+ ---> 94e814e2efa8
+Step 2/12 : MAINTAINER Valentin Chabrier "valentin.chabrier@zenika.com"
+ ---> Using cache
+ ---> 8f65dcf9d7b8
+Step 3/12 : RUN apt-get update -y
+ ---> Using cache
+ ---> 55c1d277389e
+Step 4/12 : RUN apt-get install -y python3-pip python3-dev build-essential
+ ---> Using cache
+ ---> 60c23023d290
+Step 5/12 : RUN pip3 install numpy
+ ---> Running in 5027e5596c70
+Collecting numpy
+  Downloading https://files.pythonhosted.org/packages/35/d5/4f8410ac303e690144f0a0603c4b8fd3b986feb2749c435f7cdbb288f17e/numpy-1.16.2-cp36-cp36m-manylinux1_x86_64.whl (17.3MB)
+Installing collected packages: numpy
+Successfully installed numpy-1.16.2
+Removing intermediate container 5027e5596c70
+ ---> 75a7677021d0
+Step 6/12 : RUN pip3 install sklearn
+ ---> Running in 2c5d7424b438
+Collecting sklearn
+  Downloading https://files.pythonhosted.org/packages/1e/7a/dbb3be0ce9bd5c8b7e3d87328e79063f8b263b2b1bfa4774cb1147bfcd3f/sklearn-0.0.tar.gz
+Collecting scikit-learn (from sklearn)
+  Downloading https://files.pythonhosted.org/packages/5e/82/c0de5839d613b82bddd088599ac0bbfbbbcbd8ca470680658352d2c435bd/scikit_learn-0.20.3-cp36-cp36m-manylinux1_x86_64.whl (5.4MB)
+Requirement already satisfied: numpy>=1.8.2 in /usr/local/lib/python3.6/dist-packages (from scikit-learn->sklearn)
+Collecting scipy>=0.13.3 (from scikit-learn->sklearn)
+  Downloading https://files.pythonhosted.org/packages/7f/5f/c48860704092933bf1c4c1574a8de1ffd16bf4fde8bab190d747598844b2/scipy-1.2.1-cp36-cp36m-manylinux1_x86_64.whl (24.8MB)
+Building wheels for collected packages: sklearn
+  Running setup.py bdist_wheel for sklearn: started
+  Running setup.py bdist_wheel for sklearn: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/76/03/bb/589d421d27431bcd2c6da284d5f2286c8e3b2ea3cf1594c074
+Successfully built sklearn
+Installing collected packages: scipy, scikit-learn, sklearn
+Successfully installed scikit-learn-0.20.3 scipy-1.2.1 sklearn-0.0
+Removing intermediate container 2c5d7424b438
+ ---> d771f61586cd
+Step 7/12 : RUN mkdir models
+ ---> Running in ca1c93e6a56e
+Removing intermediate container ca1c93e6a56e
+ ---> c6554f1c16d9
+Step 8/12 : COPY . /app
+ ---> 0bc734f7c89f
+Step 9/12 : WORKDIR /app
+ ---> Running in 75628c207015
+Removing intermediate container 75628c207015
+ ---> c90f02f5538b
+Step 10/12 : RUN pip3 install -r requirements.txt
+ ---> Running in f95a36578ec7
+Collecting Flask==1.0.2 (from -r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/7f/e7/08578774ed4536d3242b14dacb4696386634607af824ea997202cd0edb4b/Flask-1.0.2-py2.py3-none-any.whl (91kB)
+Collecting Werkzeug>=0.14 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/24/4d/2fc4e872fbaaf44cc3fd5a9cd42fda7e57c031f08e28c9f35689e8b43198/Werkzeug-0.15.1-py2.py3-none-any.whl (328kB)
+Collecting itsdangerous>=0.24 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
+Collecting click>=5.1 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+Collecting Jinja2>=2.10 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/7f/ff/ae64bacdfc95f27a016a7bed8e8686763ba4d277a78ca76f32659220a731/Jinja2-2.10-py2.py3-none-any.whl (126kB)
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.10->Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/b2/5f/23e0023be6bb885d00ffbefad2942bc51a620328ee910f64abe5a8d18dd1/MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl
+Installing collected packages: Werkzeug, itsdangerous, click, MarkupSafe, Jinja2, Flask
+Successfully installed Flask-1.0.2 Jinja2-2.10 MarkupSafe-1.1.1 Werkzeug-0.15.1 click-7.0 itsdangerous-1.1.0
+Removing intermediate container f95a36578ec7
+ ---> fac0943dc33a
+Step 11/12 : ENTRYPOINT ["python3"]
+ ---> Running in 23171fc5d479
+Removing intermediate container 23171fc5d479
+ ---> ab0f568d0015
+Step 12/12 : CMD ["app.py"]
+ ---> Running in f87f9e5ac722
+Removing intermediate container f87f9e5ac722
+ ---> c3df9994e1d7
+Successfully built c3df9994e1d7
+Successfully tagged flask-sample-one:latest
++ docker run -d -p 5000:5000 --name python-server flask-sample-one
+f826534f163286e2f14e91644ed6fe2e618bca04608c6799e85b0124cc242881
++ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS                  PORTS                                              NAMES
+f826534f1632        flask-sample-one              "python3 app.py"         1 second ago        Up Less than a second   0.0.0.0:5000->5000/tcp                             python-server
+039ade467811        asashiho/ml-jupyter-python3   "jupyter notebook --…"   19 minutes ago      Up 19 minutes           0.0.0.0:6006->6006/tcp, 0.0.0.0:8888->8888/tcp     compassionate_nightingale
+a83aa6c24479        jenkins-docker                "/sbin/tini -- /usr/…"   About an hour ago   Up About an hour        0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   elastic_bhabha
+Finished: SUCCESS

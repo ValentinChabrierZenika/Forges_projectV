@@ -1,0 +1,77 @@
+Started by user [8mha:////4EOMwNKdMIE5olU+Uf4/4/lfBbpxhT63uhLwDZGOznYGAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL9skSg0SWZeQDclyYqwwAAAA==[0mValentin chabrier
+Building in workspace /var/jenkins_home/workspace/web_server_deployment
+using credential 6c0e270e-2b58-464f-8e2a-7fe3e328df9a
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ValentinChabrierZenika/web_server_projectV # timeout=10
+Fetching upstream changes from https://github.com/ValentinChabrierZenika/web_server_projectV
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/ValentinChabrierZenika/web_server_projectV +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 0708ac0ada60ed55a395ea4ab5e091eeec201543 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0708ac0ada60ed55a395ea4ab5e091eeec201543
+Commit message: "update artifactory url"
+ > git rev-list --no-walk 0708ac0ada60ed55a395ea4ab5e091eeec201543 # timeout=10
+[web_server_deployment] $ /bin/sh -xe /tmp/jenkins852722192448476315.sh
++ docker ps
+CONTAINER ID        IMAGE                                            COMMAND                  CREATED             STATUS              PORTS                                              NAMES
+d0704d0d0e88        py-prom-server                                   "python /app/main.py"    About an hour ago   Up About an hour    0.0.0.0:80->80/tcp, 0.0.0.0:8082->8080/tcp         prometheus-python
+e41651989398        prom/prometheus                                  "/bin/prometheus --c…"   21 hours ago        Up About an hour    0.0.0.0:9090->9090/tcp                             prometheus
+821786e80b35        asashiho/ml-jupyter-python3                      "jupyter notebook --…"   2 days ago          Up 2 days           0.0.0.0:6006->6006/tcp, 0.0.0.0:8888->8888/tcp     cocky_tereshkova
+7b4d26baeb07        docker.bintray.io/jfrog/artifactory-oss:latest   "/entrypoint-artifac…"   2 days ago          Up 2 days           0.0.0.0:8081->8081/tcp                             artifactory-oss
+84550cdacfae        grafana/grafana                                  "/run.sh"                2 days ago          Up 2 days           0.0.0.0:3000->3000/tcp                             grafana
+5139d6045aa4        jenkins-docker                                   "/sbin/tini -- /usr/…"   2 days ago          Up 2 days           0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   infallible_cori
++ docker stop python-server
+Error response from daemon: No such container: python-server
++ true
++ docker rm python-server
+Error: No such container: python-server
++ true
++ docker build -t python-server-1.0 .
+Sending build context to Docker daemon   80.9kB
+Step 1/10 : FROM ubuntu:latest
+ ---> 94e814e2efa8
+Step 2/10 : MAINTAINER Valentin Chabrier "valentin.chabrier@zenika.com"
+ ---> Using cache
+ ---> 8f65dcf9d7b8
+Step 3/10 : RUN apt-get update -y
+ ---> Using cache
+ ---> 55c1d277389e
+Step 4/10 : RUN apt-get install -y python3-pip python3-dev build-essential
+ ---> Using cache
+ ---> 60c23023d290
+Step 5/10 : COPY . /app
+ ---> Using cache
+ ---> f9296f97d962
+Step 6/10 : WORKDIR /app
+ ---> Using cache
+ ---> 63b025c75759
+Step 7/10 : RUN mkdir models
+ ---> Using cache
+ ---> 01e4f10a158e
+Step 8/10 : RUN pip3 install -r requirements.txt
+ ---> Using cache
+ ---> 35600b0862be
+Step 9/10 : ENTRYPOINT ["python3"]
+ ---> Using cache
+ ---> 8a5db4fff58f
+Step 10/10 : CMD ["app.py"]
+ ---> Using cache
+ ---> 0f14f68fbe25
+Successfully built 0f14f68fbe25
+Successfully tagged python-server-1.0:latest
++ docker run -d -p 5000:5000 --name python-server python-server-1.0
+786d377378ebfe62a1fb1464d709afb301b602f9bdfb142892f84acdb9bbe987
++ docker ps
+CONTAINER ID        IMAGE                                            COMMAND                  CREATED                  STATUS                  PORTS                                              NAMES
+786d377378eb        python-server-1.0                                "python3 app.py"         Less than a second ago   Up Less than a second   0.0.0.0:5000->5000/tcp                             python-server
+d0704d0d0e88        py-prom-server                                   "python /app/main.py"    About an hour ago        Up About an hour        0.0.0.0:80->80/tcp, 0.0.0.0:8082->8080/tcp         prometheus-python
+e41651989398        prom/prometheus                                  "/bin/prometheus --c…"   21 hours ago             Up About an hour        0.0.0.0:9090->9090/tcp                             prometheus
+821786e80b35        asashiho/ml-jupyter-python3                      "jupyter notebook --…"   2 days ago               Up 2 days               0.0.0.0:6006->6006/tcp, 0.0.0.0:8888->8888/tcp     cocky_tereshkova
+7b4d26baeb07        docker.bintray.io/jfrog/artifactory-oss:latest   "/entrypoint-artifac…"   2 days ago               Up 2 days               0.0.0.0:8081->8081/tcp                             artifactory-oss
+84550cdacfae        grafana/grafana                                  "/run.sh"                2 days ago               Up 2 days               0.0.0.0:3000->3000/tcp                             grafana
+5139d6045aa4        jenkins-docker                                   "/sbin/tini -- /usr/…"   2 days ago               Up 2 days               0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   infallible_cori
+Finished: SUCCESS

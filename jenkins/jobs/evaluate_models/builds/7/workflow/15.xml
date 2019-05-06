@@ -1,0 +1,113 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.2">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2.67">
+    <parentIds>
+      <string>14</string>
+    </parentIds>
+    <id>15</id>
+    <startId>9</startId>
+  </node>
+  <actions>
+    <wf.a.BodyInvocationAction plugin="workflow-api@2.33"/>
+    <wf.a.TimingAction plugin="workflow-api@2.33">
+      <startTime>1556612604367</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.33">
+      <error class="com.fasterxml.jackson.databind.JsonMappingException" plugin="jackson2-api@2.9.8">
+        <detailMessage>Unexpected character (&apos;}&apos; (code 125)): was expecting double-quote to start field name</detailMessage>
+        <cause class="com.fasterxml.jackson.core.JsonParseException">
+          <detailMessage>Unexpected character (&apos;}&apos; (code 125)): was expecting double-quote to start field name</detailMessage>
+          <stackTrace>
+            <trace>com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)</trace>
+            <trace>com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:693)</trace>
+            <trace>com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:591)</trace>
+            <trace>com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddName(ReaderBasedJsonParser.java:1767)</trace>
+            <trace>com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextFieldName(ReaderBasedJsonParser.java:917)</trace>
+            <trace>com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:295)</trace>
+            <trace>com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)</trace>
+            <trace>com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:195)</trace>
+            <trace>com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:21)</trace>
+            <trace>com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)</trace>
+            <trace>com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)</trace>
+            <trace>com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)</trace>
+            <trace>com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)</trace>
+            <trace>com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)</trace>
+            <trace>org.jfrog.build.extractor.clientConfiguration.util.spec.SpecsHelper.getSpecFromString(SpecsHelper.java:167)</trace>
+            <trace>org.jfrog.build.extractor.clientConfiguration.util.spec.SpecsHelper.downloadArtifactsBySpec(SpecsHelper.java:142)</trace>
+            <trace>org.jfrog.hudson.generic.FilesResolverCallable.invoke(FilesResolverCallable.java:48)</trace>
+            <trace>org.jfrog.hudson.generic.FilesResolverCallable.invoke(FilesResolverCallable.java:20)</trace>
+            <trace>hudson.FilePath.act(FilePath.java:1075)</trace>
+            <trace>hudson.FilePath.act(FilePath.java:1058)</trace>
+            <trace>org.jfrog.hudson.pipeline.common.executors.GenericDownloadExecutor.execute(GenericDownloadExecutor.java:47)</trace>
+            <trace>org.jfrog.hudson.pipeline.declarative.steps.generic.DownloadStep$Execution.run(DownloadStep.java:43)</trace>
+            <trace>org.jfrog.hudson.pipeline.declarative.steps.generic.DownloadStep$Execution.run(DownloadStep.java:25)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.AbstractSynchronousNonBlockingStepExecution$1$1.call(AbstractSynchronousNonBlockingStepExecution.java:47)</trace>
+            <trace>hudson.security.ACL.impersonate(ACL.java:290)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.AbstractSynchronousNonBlockingStepExecution$1.run(AbstractSynchronousNonBlockingStepExecution.java:44)</trace>
+            <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+            <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+            <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+            <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+            <trace>java.lang.Thread.run(Thread.java:748)</trace>
+          </stackTrace>
+          <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+            <c class="list"/>
+            <list reference="../c"/>
+          </suppressedExceptions>
+          <__location>
+            <__totalBytes>-1</__totalBytes>
+            <__totalChars>207</__totalChars>
+            <__lineNr>6</__lineNr>
+            <__columnNr>30</__columnNr>
+          </__location>
+        </cause>
+        <stackTrace>
+          <trace>com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:394)</trace>
+          <trace>com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:365)</trace>
+          <trace>com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:206)</trace>
+          <trace>com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:21)</trace>
+          <trace>com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)</trace>
+          <trace>com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)</trace>
+          <trace>com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)</trace>
+          <trace>com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)</trace>
+          <trace>com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)</trace>
+          <trace>org.jfrog.build.extractor.clientConfiguration.util.spec.SpecsHelper.getSpecFromString(SpecsHelper.java:167)</trace>
+          <trace>org.jfrog.build.extractor.clientConfiguration.util.spec.SpecsHelper.downloadArtifactsBySpec(SpecsHelper.java:142)</trace>
+          <trace>org.jfrog.hudson.generic.FilesResolverCallable.invoke(FilesResolverCallable.java:48)</trace>
+          <trace>org.jfrog.hudson.generic.FilesResolverCallable.invoke(FilesResolverCallable.java:20)</trace>
+          <trace>hudson.FilePath.act(FilePath.java:1075)</trace>
+          <trace>hudson.FilePath.act(FilePath.java:1058)</trace>
+          <trace>org.jfrog.hudson.pipeline.common.executors.GenericDownloadExecutor.execute(GenericDownloadExecutor.java:47)</trace>
+          <trace>org.jfrog.hudson.pipeline.declarative.steps.generic.DownloadStep$Execution.run(DownloadStep.java:43)</trace>
+          <trace>org.jfrog.hudson.pipeline.declarative.steps.generic.DownloadStep$Execution.run(DownloadStep.java:25)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.AbstractSynchronousNonBlockingStepExecution$1$1.call(AbstractSynchronousNonBlockingStepExecution.java:47)</trace>
+          <trace>hudson.security.ACL.impersonate(ACL.java:290)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.AbstractSynchronousNonBlockingStepExecution$1.run(AbstractSynchronousNonBlockingStepExecution.java:44)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" reference="../cause/suppressedExceptions"/>
+        <__location>
+          <__totalBytes>-1</__totalBytes>
+          <__totalChars>167</__totalChars>
+          <__lineNr>5</__lineNr>
+          <__columnNr>41</__columnNr>
+        </__location>
+        <__path>
+          <com.fasterxml.jackson.databind.JsonMappingException_-Reference>
+            <__fieldName>files</__fieldName>
+            <__index>-1</__index>
+            <__desc>org.jfrog.build.extractor.clientConfiguration.util.spec.Spec[&quot;files&quot;]</__desc>
+          </com.fasterxml.jackson.databind.JsonMappingException_-Reference>
+          <com.fasterxml.jackson.databind.JsonMappingException_-Reference>
+            <__index>0</__index>
+            <__desc>java.lang.Object[][0]</__desc>
+          </com.fasterxml.jackson.databind.JsonMappingException_-Reference>
+        </__path>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

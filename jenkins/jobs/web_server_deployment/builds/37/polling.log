@@ -1,0 +1,12 @@
+Started on Apr 8, 2019 12:26:33 PM
+Started by event from ::ffff:192.30.252.35 ⇒ http://valentinz.pagekite.me:8080/github-webhook/ on Mon Apr 08 12:26:33 UTC 2019
+Using strategy: Default
+[poll] Last Built Revision: Revision 740d30d768684b1ab2eea9236d9586a6edc8eb9c (refs/remotes/origin/master)
+using credential 6c0e270e-2b58-464f-8e2a-7fe3e328df9a
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git ls-remote -h https://github.com/ValentinChabrierZenika/web_server_projectV # timeout=10
+Found 1 remote heads on https://github.com/ValentinChabrierZenika/web_server_projectV
+[poll] Latest remote head revision on refs/heads/master is: 8b615255d9cd155bb88814ec3331aa9a2bf933ca
+Done. Took 1.8 sec
+Changes found

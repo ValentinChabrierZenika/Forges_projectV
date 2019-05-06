@@ -1,0 +1,22 @@
+commit c06abde00de40e0dfda142b3b65f040a46ac7a9c
+tree 9ff696690c793c89c6f7da218f7833e2657f910c
+parent 9c9d367671f5c9bfbd9851bf8bdc795a5cfde5aa
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 14:07:22 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 14:07:22 +0200
+
+    test script in jenkinsifle
+
+
+
+:100644 100644 2bfb9ca1db380ec39ed530d408f3a28458f528dc 53c4d3dff1fa27dfd3326b4acfbb069b2d19523e M	Jenkinsfile
+commit 9c9d367671f5c9bfbd9851bf8bdc795a5cfde5aa
+tree 05397cc75bfc8076eebe6e1260e9adc96aa78245
+parent 96840485e4c751a5a03106aa2f6487c2ca7274ee
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 14:05:35 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 14:05:35 +0200
+
+    test script in jenkinsifle
+
+
+
+:100644 100644 66ac9f41ff346de363d99472be0b1836796f0a0d 2bfb9ca1db380ec39ed530d408f3a28458f528dc M	Jenkinsfile

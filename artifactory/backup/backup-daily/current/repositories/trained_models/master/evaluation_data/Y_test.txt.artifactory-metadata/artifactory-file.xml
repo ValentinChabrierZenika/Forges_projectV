@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>trained_models</repoKey>
+    <path>master/evaluation_data/Y_test.txt</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Y_test.txt</name>
+  <created>1556789419385</created>
+  <lastModified>1556789418801</lastModified>
+  <size>993600</size>
+  <additionalInfo>
+    <createdBy>admin</createdBy>
+    <modifiedBy>admin</modifiedBy>
+    <lastUpdated>1556789419386</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>92bea79ed0aba37691552f90fd6025de0868573b</original>
+          <actual>92bea79ed0aba37691552f90fd6025de0868573b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>ec21556f24d62850dade20bdfe186330</original>
+          <actual>ec21556f24d62850dade20bdfe186330</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ec68a8c6bc116499ea65b70be9d099846736c0926ba0652d7bf54786e13b8d97</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

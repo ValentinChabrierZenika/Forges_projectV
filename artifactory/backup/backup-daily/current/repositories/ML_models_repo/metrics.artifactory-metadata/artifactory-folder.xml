@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>ML_models_repo</repoKey>
+    <path>metrics</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>metrics</name>
+  <created>1556898244618</created>
+  <lastModified>1556898244618</lastModified>
+  <additionalInfo>
+    <createdBy>admin</createdBy>
+    <modifiedBy>admin</modifiedBy>
+    <lastUpdated>1556898244618</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

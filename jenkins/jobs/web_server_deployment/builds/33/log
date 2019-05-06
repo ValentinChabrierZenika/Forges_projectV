@@ -1,0 +1,73 @@
+Started by user [8mha:////4EOMwNKdMIE5olU+Uf4/4/lfBbpxhT63uhLwDZGOznYGAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL9skSg0SWZeQDclyYqwwAAAA==[0mValentin chabrier
+Building in workspace /var/jenkins_home/workspace/test-jenkins
+using credential 6c0e270e-2b58-464f-8e2a-7fe3e328df9a
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ValentinChabrierZenika/hello_world_jenkins # timeout=10
+Fetching upstream changes from https://github.com/ValentinChabrierZenika/hello_world_jenkins
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/ValentinChabrierZenika/hello_world_jenkins +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 23686536e8dceefa0869aae8155f0c68d61bb709 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 23686536e8dceefa0869aae8155f0c68d61bb709
+Commit message: "pull .pkl from artifacts repo"
+ > git rev-list --no-walk 23686536e8dceefa0869aae8155f0c68d61bb709 # timeout=10
+[test-jenkins] $ /bin/sh -xe /tmp/jenkins2755938596987741468.sh
++ docker ps
+CONTAINER ID        IMAGE                                            COMMAND                  CREATED             STATUS              PORTS                                              NAMES
+981c56f079ba        jenkins-docker                                   "/sbin/tini -- /usr/…"   About an hour ago   Up About an hour    0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   youthful_merkle
+13c8510afbde        docker.bintray.io/jfrog/artifactory-oss:latest   "/entrypoint-artifac…"   About an hour ago   Up About an hour    0.0.0.0:8081->8081/tcp                             artifactory-oss
++ docker stop python-server
+python-server
++ docker rm python-server
+python-server
++ docker build -t python-server-1.0 .
+Sending build context to Docker daemon  182.8kB
+Step 1/12 : FROM ubuntu:latest
+ ---> 94e814e2efa8
+Step 2/12 : MAINTAINER Valentin Chabrier "valentin.chabrier@zenika.com"
+ ---> Using cache
+ ---> 8f65dcf9d7b8
+Step 3/12 : RUN apt-get update -y
+ ---> Using cache
+ ---> 55c1d277389e
+Step 4/12 : RUN apt-get install -y python3-pip python3-dev build-essential
+ ---> Using cache
+ ---> 60c23023d290
+Step 5/12 : RUN pip3 install numpy
+ ---> Using cache
+ ---> 75a7677021d0
+Step 6/12 : RUN pip3 install sklearn
+ ---> Using cache
+ ---> d771f61586cd
+Step 7/12 : RUN mkdir models
+ ---> Using cache
+ ---> c6554f1c16d9
+Step 8/12 : COPY . /app
+ ---> Using cache
+ ---> 07d591021546
+Step 9/12 : WORKDIR /app
+ ---> Using cache
+ ---> 547140699734
+Step 10/12 : RUN pip3 install -r requirements.txt
+ ---> Using cache
+ ---> c7f439a7dea7
+Step 11/12 : ENTRYPOINT ["python3"]
+ ---> Using cache
+ ---> 3c5032981308
+Step 12/12 : CMD ["app.py"]
+ ---> Using cache
+ ---> 6dae76d2e84c
+Successfully built 6dae76d2e84c
+Successfully tagged python-server-1.0:latest
++ docker run -d -p 5000:5000 --name python-server python-server-1.0
+386a9457c2c561f7529b80e860645f3b97ea6b20f946a291213e6bb4d249221f
++ docker ps
+CONTAINER ID        IMAGE                                            COMMAND                  CREATED                  STATUS                  PORTS                                              NAMES
+386a9457c2c5        python-server-1.0                                "python3 app.py"         Less than a second ago   Up Less than a second   0.0.0.0:5000->5000/tcp                             python-server
+981c56f079ba        jenkins-docker                                   "/sbin/tini -- /usr/…"   About an hour ago        Up About an hour        0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   youthful_merkle
+13c8510afbde        docker.bintray.io/jfrog/artifactory-oss:latest   "/entrypoint-artifac…"   About an hour ago        Up About an hour        0.0.0.0:8081->8081/tcp                             artifactory-oss
+Finished: SUCCESS

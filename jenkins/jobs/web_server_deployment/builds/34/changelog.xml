@@ -1,0 +1,12 @@
+commit 3a1ca30d41b2b169ef4e9f65da0e3966abd0990a
+tree 94e6837c95d28d50caee75bdce12bd139dce7633
+parent 23686536e8dceefa0869aae8155f0c68d61bb709
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-03 16:44:10 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-03 16:44:10 +0200
+
+    modify dockerfile
+
+
+
+:100644 100644 c94151959a9be8d26aa617eeb8edef9727d9df1e cf12794ac41887884a569ebb4d5f4e205b5f1097 M	Dockerfile
+:100644 100644 2fa1a01d41363a6e0572a36dcd3a7040eca61fc9 71d6335f955109a9dcff38c98339b46171347869 M	requirements.txt

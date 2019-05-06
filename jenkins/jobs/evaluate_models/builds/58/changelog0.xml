@@ -1,0 +1,11 @@
+commit 8f8f4fc497bc74d06c439e466fd82680a95a63a4
+tree 7a69ba5ab0a1b128d62a3501848844a8702422c3
+parent 66438bd75c536cb573c7937e4803b2f1fa9804ad
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 16:12:53 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 16:12:53 +0200
+
+    test comparison script
+
+
+
+:100644 100644 cef2331b505552375dd00756f378c8a37b7bc66c d54cf06ad4b626ceaa2f4a8448759ebd6aa286ad M	Jenkinsfile

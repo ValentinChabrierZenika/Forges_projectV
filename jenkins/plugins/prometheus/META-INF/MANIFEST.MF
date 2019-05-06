@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: lsjostrom
+Build-Jdk: 1.8.0_181
+Extension-Name: prometheus
+Specification-Title: Expose Jenkins metrics in prometheus format
+Specification-Vendor: Radicore AB
+Implementation-Vendor: Radicore AB
+Implementation-Title: prometheus
+Implementation-Version: 2.0.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: prometheus
+Long-Name: Prometheus metrics plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Prometheus+Plugin
+Plugin-Version: 2.0.0
+Hudson-Version: 1.625.3
+Jenkins-Version: 1.625.3
+Plugin-Dependencies: metrics:3.1.2.7,junit:1.21,workflow-job:1.8,workf
+ low-api:1.8
+Plugin-Developers: Lars Sjostrom:devguy:
+

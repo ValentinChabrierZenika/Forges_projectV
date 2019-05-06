@@ -1,0 +1,11 @@
+commit 5a7a7d615515244b7b9c71fedd21d192a99d56d7
+tree e0138fd26996b2364e014d38803854a35a6153ce
+parent 578dddcc501b93976d58afe113eded03341926eb
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 16:17:40 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 16:17:40 +0200
+
+    add upload of best model to jenkinsfile
+
+
+
+:100644 100644 5ed60648a5060832bc2ce6baf30b06bb979899c2 a0ac000261e4291d5f818e02fb63c6787f7fe6c3 M	Jenkinsfile

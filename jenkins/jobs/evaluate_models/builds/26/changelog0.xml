@@ -1,0 +1,22 @@
+commit 853b7df3e9c65d064de726b46ebc935592f40ff9
+tree d84768537d1bbc8b5a257f82555cacf4f884644f
+parent 82cb5325b0e685cc769d93b8bfcc02ad2706100d
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 14:37:01 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 14:37:01 +0200
+
+    add comparison script in jenkinsfile
+
+
+
+:100644 100644 565ff3e0db9b99ed22f664009031c66da68e2a4a b7064638b2faf7201e12e2fb4ed659004feb9f49 M	Jenkinsfile
+commit 82cb5325b0e685cc769d93b8bfcc02ad2706100d
+tree 5afd5f50cd147a7452be4ee5fb83ec2e9d18e435
+parent e93e56b66dfe5ec5a0deab6e2b2eec4a59e7b4a2
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 14:34:08 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 14:34:08 +0200
+
+    add comparison script
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 e0894e373120e0a6a46494047e325d7194981952 A	compare_models.py

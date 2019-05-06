@@ -1,0 +1,8 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.slack.SlackNotifier_-DescriptorImpl plugin="slack@2.22">
+  <baseUrl>https://bccproject.slack.com/services/hooks/jenkins-ci/</baseUrl>
+  <teamDomain></teamDomain>
+  <tokenCredentialId>slack_token</tokenCredentialId>
+  <botUser>false</botUser>
+  <room>projectv_test</room>
+</jenkins.plugins.slack.SlackNotifier_-DescriptorImpl>

@@ -1,0 +1,84 @@
+Started by GitHub push by ValentinChabrierZenika
+Building in workspace /var/jenkins_home/workspace/test-jenkins
+using credential 6c0e270e-2b58-464f-8e2a-7fe3e328df9a
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ValentinChabrierZenika/hello_world_jenkins # timeout=10
+Fetching upstream changes from https://github.com/ValentinChabrierZenika/hello_world_jenkins
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/ValentinChabrierZenika/hello_world_jenkins +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 4980b153fa5924e6f1dd03a7283bcca64e672a63 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4980b153fa5924e6f1dd03a7283bcca64e672a63
+Commit message: "test"
+ > git rev-list --no-walk 03ae8631901f5563a6ae5dceef6b54f7d97cf409 # timeout=10
+[test-jenkins] $ /bin/sh -xe /tmp/jenkins2071957438936893365.sh
++ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                              NAMES
+039ade467811        asashiho/ml-jupyter-python3   "jupyter notebook --…"   15 minutes ago      Up 15 minutes       0.0.0.0:6006->6006/tcp, 0.0.0.0:8888->8888/tcp     compassionate_nightingale
+a83aa6c24479        jenkins-docker                "/sbin/tini -- /usr/…"   About an hour ago   Up About an hour    0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   elastic_bhabha
++ docker stop python-server
+python-server
++ docker rm python-server
+python-server
++ docker build -t flask-sample-one .
+Sending build context to Docker daemon  155.6kB
+Step 1/10 : FROM ubuntu:latest
+ ---> 94e814e2efa8
+Step 2/10 : MAINTAINER Valentin Chabrier "valentin.chabrier@zenika.com"
+ ---> Using cache
+ ---> 8f65dcf9d7b8
+Step 3/10 : RUN apt-get update -y
+ ---> Using cache
+ ---> 55c1d277389e
+Step 4/10 : RUN apt-get install -y python3-pip python3-dev build-essential
+ ---> Using cache
+ ---> 60c23023d290
+Step 5/10 : RUN mkdir models
+ ---> Using cache
+ ---> 31f9223c0c72
+Step 6/10 : COPY . /app
+ ---> 72068144a873
+Step 7/10 : WORKDIR /app
+ ---> Running in 006092ea8d58
+Removing intermediate container 006092ea8d58
+ ---> af94f7d1557d
+Step 8/10 : RUN pip3 install -r requirements.txt
+ ---> Running in 41f8afe673ec
+Collecting Flask==1.0.2 (from -r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/7f/e7/08578774ed4536d3242b14dacb4696386634607af824ea997202cd0edb4b/Flask-1.0.2-py2.py3-none-any.whl (91kB)
+Collecting click>=5.1 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+Collecting itsdangerous>=0.24 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
+Collecting Jinja2>=2.10 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/7f/ff/ae64bacdfc95f27a016a7bed8e8686763ba4d277a78ca76f32659220a731/Jinja2-2.10-py2.py3-none-any.whl (126kB)
+Collecting Werkzeug>=0.14 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/24/4d/2fc4e872fbaaf44cc3fd5a9cd42fda7e57c031f08e28c9f35689e8b43198/Werkzeug-0.15.1-py2.py3-none-any.whl (328kB)
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.10->Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/b2/5f/23e0023be6bb885d00ffbefad2942bc51a620328ee910f64abe5a8d18dd1/MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl
+Installing collected packages: click, itsdangerous, MarkupSafe, Jinja2, Werkzeug, Flask
+Successfully installed Flask-1.0.2 Jinja2-2.10 MarkupSafe-1.1.1 Werkzeug-0.15.1 click-7.0 itsdangerous-1.1.0
+Removing intermediate container 41f8afe673ec
+ ---> 2d10eafba831
+Step 9/10 : ENTRYPOINT ["python3"]
+ ---> Running in 342458a00003
+Removing intermediate container 342458a00003
+ ---> 5e1e8f3af676
+Step 10/10 : CMD ["app.py"]
+ ---> Running in 9d7e6bed061b
+Removing intermediate container 9d7e6bed061b
+ ---> d33f38c1a582
+Successfully built d33f38c1a582
+Successfully tagged flask-sample-one:latest
++ docker run -d -p 5000:5000 --name python-server flask-sample-one
+23d026afe6393a9066299b8d429764a8df0e6deb46ae4ef2e1a43f86f5a08569
++ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS                  PORTS                                              NAMES
+23d026afe639        flask-sample-one              "python3 app.py"         1 second ago        Up Less than a second   0.0.0.0:5000->5000/tcp                             python-server
+039ade467811        asashiho/ml-jupyter-python3   "jupyter notebook --…"   15 minutes ago      Up 15 minutes           0.0.0.0:6006->6006/tcp, 0.0.0.0:8888->8888/tcp     compassionate_nightingale
+a83aa6c24479        jenkins-docker                "/sbin/tini -- /usr/…"   About an hour ago   Up About an hour        0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   elastic_bhabha
+Finished: SUCCESS

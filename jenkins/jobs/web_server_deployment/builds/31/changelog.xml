@@ -1,0 +1,12 @@
+commit 23686536e8dceefa0869aae8155f0c68d61bb709
+tree 1e84c313f006e198ebce3e20a7902514a02dd44c
+parent d2b94e1ce2776ae7e282889c1b7f086bd10453b8
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-03 16:37:06 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-03 16:37:06 +0200
+
+    pull .pkl from artifacts repo
+
+
+
+:100644 100644 216aa6f0d459ce3e25be7084e2e741ea456bc95f 137566bdfe30a4f87a52ecca83173abf32b6cb64 M	app.py
+:100644 000000 a3172c2a1a9af09b89d54780c7cae0fb6407d01c 0000000000000000000000000000000000000000 D	models/model.pkl

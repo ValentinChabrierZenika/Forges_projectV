@@ -1,0 +1,11 @@
+commit 713388a8163a3dbffe1ac23a55cd14df868d28f7
+tree 587735e3791cae3a5876c1d66be030701e1b173e
+parent eeff0ea6ca6fd4229719da0c6ce3548b3c7f0abf
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 17:03:16 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 17:03:16 +0200
+
+    refactoring comparison script
+
+
+
+:100644 100644 a52020c3647f1b4140a9528633f2fdb97f185a76 2545ebfe2aa2da8fae5984b40775096fc8ccfaab M	compare_models.py

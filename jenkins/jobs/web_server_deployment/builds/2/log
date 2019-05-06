@@ -1,0 +1,75 @@
+Started by GitHub push by ValentinChabrierZenika
+Building in workspace /var/jenkins_home/workspace/test-jenkins
+using credential 6c0e270e-2b58-464f-8e2a-7fe3e328df9a
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ValentinChabrierZenika/hello_world_jenkins # timeout=10
+Fetching upstream changes from https://github.com/ValentinChabrierZenika/hello_world_jenkins
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/ValentinChabrierZenika/hello_world_jenkins +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision cc4b3262b16b0f15781b9de9fb96786657dbe4a7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cc4b3262b16b0f15781b9de9fb96786657dbe4a7
+Commit message: "last test"
+ > git rev-list --no-walk af0044811c6d6691c00a43bcdaa2cc7df69efcb4 # timeout=10
+[test-jenkins] $ /bin/sh -xe /tmp/jenkins8037393267692404907.sh
++ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                              NAMES
+61a99aa50bb5        jenkins-docker      "/sbin/tini -- /usr/…"   9 minutes ago       Up 9 minutes        0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   angry_dirac
++ docker build -t flask-sample-one .
+Sending build context to Docker daemon  112.1kB
+Step 1/9 : FROM ubuntu:latest
+ ---> 94e814e2efa8
+Step 2/9 : MAINTAINER Valentin Chabrier "valentin.chabrier@zenika.com"
+ ---> Using cache
+ ---> 8f65dcf9d7b8
+Step 3/9 : RUN apt-get update -y
+ ---> Using cache
+ ---> 55c1d277389e
+Step 4/9 : RUN apt-get install -y python3-pip python3-dev build-essential
+ ---> Using cache
+ ---> 60c23023d290
+Step 5/9 : COPY . /app
+ ---> ba9e29c4ecae
+Step 6/9 : WORKDIR /app
+ ---> Running in e2b1dda2e545
+Removing intermediate container e2b1dda2e545
+ ---> 2e90c9549dc8
+Step 7/9 : RUN pip3 install -r requirements.txt
+ ---> Running in d1179df99738
+Collecting Flask==1.0.2 (from -r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/7f/e7/08578774ed4536d3242b14dacb4696386634607af824ea997202cd0edb4b/Flask-1.0.2-py2.py3-none-any.whl (91kB)
+Collecting itsdangerous>=0.24 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
+Collecting click>=5.1 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+Collecting Jinja2>=2.10 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/7f/ff/ae64bacdfc95f27a016a7bed8e8686763ba4d277a78ca76f32659220a731/Jinja2-2.10-py2.py3-none-any.whl (126kB)
+Collecting Werkzeug>=0.14 (from Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/24/4d/2fc4e872fbaaf44cc3fd5a9cd42fda7e57c031f08e28c9f35689e8b43198/Werkzeug-0.15.1-py2.py3-none-any.whl (328kB)
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.10->Flask==1.0.2->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/b2/5f/23e0023be6bb885d00ffbefad2942bc51a620328ee910f64abe5a8d18dd1/MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl
+Installing collected packages: itsdangerous, click, MarkupSafe, Jinja2, Werkzeug, Flask
+Successfully installed Flask-1.0.2 Jinja2-2.10 MarkupSafe-1.1.1 Werkzeug-0.15.1 click-7.0 itsdangerous-1.1.0
+Removing intermediate container d1179df99738
+ ---> 88d5a8ab5f43
+Step 8/9 : ENTRYPOINT ["python3"]
+ ---> Running in a393c9929d54
+Removing intermediate container a393c9929d54
+ ---> 458f34bd3482
+Step 9/9 : CMD ["app.py"]
+ ---> Running in d06b4ad6fbdb
+Removing intermediate container d06b4ad6fbdb
+ ---> b9c967ed8a2f
+Successfully built b9c967ed8a2f
+Successfully tagged flask-sample-one:latest
++ docker run -d -p 5000:5000 flask-sample-one
+b9162096b2312f68f6ef73b526a9eb88d2bc574241e8e450deb711b132a8a575
++ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                  PORTS                                              NAMES
+b9162096b231        flask-sample-one    "python3 app.py"         1 second ago        Up Less than a second   0.0.0.0:5000->5000/tcp                             sharp_khayyam
+61a99aa50bb5        jenkins-docker      "/sbin/tini -- /usr/…"   10 minutes ago      Up 10 minutes           0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   angry_dirac
+Finished: SUCCESS

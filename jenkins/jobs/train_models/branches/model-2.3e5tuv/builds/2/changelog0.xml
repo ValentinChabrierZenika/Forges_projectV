@@ -1,0 +1,11 @@
+commit 36174b5351eaefd94f6da0a52423813e4cd8b8f6
+tree e18075a78f32cb8b3e3bd6c453e7a4610d5dca83
+parent 6b09fb7cdb6cf467d96f3cfec6fabf78a86eeb61
+author valentin <valentin.chabrier@zenika.com> 2019-05-02 10:44:41 +0200
+committer valentin <valentin.chabrier@zenika.com> 2019-05-02 10:44:41 +0200
+
+    test echo branch name
+
+
+
+:100644 100644 9cd45679086a876868c5498138045b39fb8572ee bda4cfcd98f245be1dfe9db16ecc28fc9f88705f M	Jenkinsfile

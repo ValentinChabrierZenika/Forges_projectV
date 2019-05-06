@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>trained_models</repoKey>
+    <path>master/model.pkl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>model.pkl</name>
+  <created>1556789407752</created>
+  <lastModified>1556789407647</lastModified>
+  <size>676</size>
+  <additionalInfo>
+    <createdBy>admin</createdBy>
+    <modifiedBy>admin</modifiedBy>
+    <lastUpdated>1556789407753</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>5d8d35d64419d20c2bf8767b18f91561a4e985fb</original>
+          <actual>5d8d35d64419d20c2bf8767b18f91561a4e985fb</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>1d145ae7b7b42b3e8475ebd85bbb1c5a</original>
+          <actual>1d145ae7b7b42b3e8475ebd85bbb1c5a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8ef5383666c787c5d381b22281bff84826c9df34c40392b49cdfe23c23d3a817</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

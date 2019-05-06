@@ -1,0 +1,11 @@
+commit 578dddcc501b93976d58afe113eded03341926eb
+tree 6a903b8d80d9afe412395541fd9a14140c49bb32
+parent 06bd4ef4836d36b92adef39e0208fcdb969fb912
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 16:14:06 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 16:14:06 +0200
+
+    debug in jenkinsfile
+
+
+
+:100644 100644 b76817c2a83ecb5554a27ae04af52e7a705f8fe4 fd77ec4e8b3a3af5f1d84a6dfde133a2c9ca30bf M	compare_models.py

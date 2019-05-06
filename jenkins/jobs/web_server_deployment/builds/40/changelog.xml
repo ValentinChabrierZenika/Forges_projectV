@@ -1,0 +1,11 @@
+commit 0708ac0ada60ed55a395ea4ab5e091eeec201543
+tree f49b77f07e7d4effa6223be9f4e8dd2b125eaf4f
+parent 7b5578af2c36d6f421ce2dc5419b0db99388d634
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-12 11:24:12 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-12 11:24:12 +0200
+
+    update artifactory url
+
+
+
+:100644 100644 55ac9e7092819d3c9abaa416e33a102f1511dcfc de111d8bc985a13f6389de1baa719cc3c1da445a M	app.py

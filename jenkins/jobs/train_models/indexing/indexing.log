@@ -1,0 +1,30 @@
+Started by user [8mha:////4EOMwNKdMIE5olU+Uf4/4/lfBbpxhT63uhLwDZGOznYGAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL9skSg0SWZeQDclyYqwwAAAA==[0mValentin chabrier
+[Thu May 02 09:16:22 UTC 2019] Starting branch indexing...
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git ls-remote --symref https://github.com/ValentinChabrierZenika/ml_model_projectV.git # timeout=10
+ > git rev-parse --is-inside-work-tree # timeout=10
+Setting origin to https://github.com/ValentinChabrierZenika/ml_model_projectV.git
+ > git config remote.origin.url https://github.com/ValentinChabrierZenika/ml_model_projectV.git # timeout=10
+Fetching & pruning origin...
+Fetching upstream changes from origin
+ > git --version # timeout=10
+ > git config --get remote.origin.url # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress origin +refs/heads/*:refs/remotes/origin/* --prune
+Listing remote references...
+ > git config --get remote.origin.url # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git ls-remote -h https://github.com/ValentinChabrierZenika/ml_model_projectV.git # timeout=10
+Checking branches...
+  Checking branch model_2
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: model_2 (still at 32bce277f9590587326842e9462f823b4dc4a898)
+  Checking branch master
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: master (still at 41c28cd2c20239916b2256842fd09766578829e4)
+Processed 2 branches
+[Thu May 02 09:16:29 UTC 2019] Finished branch indexing. Indexing took 6.8 sec
+Finished: SUCCESS

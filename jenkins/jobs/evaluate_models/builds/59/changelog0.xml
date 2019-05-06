@@ -1,0 +1,11 @@
+commit 8b9c9ef53424094503e44bea2528a7aef3fc7aeb
+tree bbd7a24a1c86610fe60fc985e5b018cd00b9ead7
+parent 8f8f4fc497bc74d06c439e466fd82680a95a63a4
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 16:15:32 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-02 16:15:32 +0200
+
+    test comparison script
+
+
+
+:100644 100644 2e28aad221d3178db3a7a2fa3a5dcd7f0cf6d9b4 539f2de73694480c7bc7f44c80528c60e3b4fdec M	compare_models.py

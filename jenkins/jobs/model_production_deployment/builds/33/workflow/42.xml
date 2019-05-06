@@ -1,0 +1,40 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.2">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.67">
+    <parentIds>
+      <string>41</string>
+    </parentIds>
+    <id>42</id>
+    <descriptorId>org.jfrog.hudson.pipeline.declarative.steps.generic.UploadStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.67">
+      <arguments>
+        <entry>
+          <string>serverId</string>
+          <string>Artifactory_ML_Server</string>
+        </entry>
+        <entry>
+          <string>spec</string>
+          <string>{
+                        &quot;files&quot;: [
+                            {
+                            &quot;pattern&quot;: &quot;deploy_new_model/model.pkl&quot;,
+                            &quot;target&quot;: &quot;ML_models_repo/&quot;
+                            },
+                            {
+                            &quot;pattern&quot;: &quot;deploy_new_model/metrics_data.json&quot;,
+                            &quot;target&quot;: &quot;ML_models_repo/metrics/&quot;
+                            }
+                        ]
+                        }</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.33">
+      <startTime>1556898240573</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

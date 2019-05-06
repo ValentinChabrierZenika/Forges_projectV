@@ -1,0 +1,6 @@
+---
+federation:
+  inbound:
+    service-id-mapping:
+    - from: "jfrt@*"
+      to: "jfrt@01d8qtzt523pjz1zsnh74b0bqb"

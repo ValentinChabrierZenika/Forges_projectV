@@ -1,0 +1,13 @@
+commit f0ed61b24f6f45604a4c094a21fcae8ad2246c55
+tree 7a6bfc4a30ec2b04b2908d22df8d7b84b72eb107
+parent f9aa04467d5202402f9359ace8cf52f23dad9422
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 14:48:07 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 14:48:07 +0200
+
+    little modifcations on scripts and jenkinsfile
+
+
+
+:100644 100644 b7064638b2faf7201e12e2fb4ed659004feb9f49 7d6d7ff57809e237431606f30f4ea609d100de8b M	Jenkinsfile
+:100644 100644 83dc693a9e6e4a904284a595951b4720c2fe9653 7c23e64ea098f38c71de324009bfe7befdaa35b6 M	compare_models.py
+:100644 100644 ec7ceb9bda936cac4372c4617093e8c6bb7487a9 63d9bc3fe02001f2b9a505f57239ebfa1de56cdb M	evaluate_model.py

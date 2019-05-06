@@ -1,0 +1,87 @@
+version: "3"
+
+services:
+  
+  jenkins-docker:
+    image: jenkins-docker
+    hostname: jenkins-docker
+    ports:
+    - 8080:8080
+    - 50000:50000
+    environment:
+      - WEB_SERVER_GIT_URL=${WEB_SERVER_GIT_URL}
+      - ML_MODELS_GIT_URL=${ML_MODELS_GIT_URL}
+      - NOTEBOOK_NAME=${NOTEBOOK_NAME}
+      - JENKINS_URL=${JENKINS_URL}
+      - ARTIFACTORY_URL= ${ARTIFACTORY_URL}
+      - SLACK_URL= ${SLACK_URL}
+      - SLACK_CHANNEL_NAME= ${SLACK_CHANNEL_NAME}
+      - ARTIFACTORY_SERVER_NAME=${ARTIFACTORY_SERVER_NAME}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - $PWD/jenkins:/var/jenkins_home:z
+    container_name: jenkins-docker
+    depends_on:
+    - artifactory
+
+  prometheus:
+    image: prom/prometheus
+    ports: 
+    - 9090:9090
+    environment:
+    - JENKINS_URL=${JENKINS_URL}
+    volumes:
+    - $PWD/prometheus/etc:/etc/
+    container_name: prometheus
+
+  grafana:
+    image: grafana/grafana
+    ports: 
+    - 3000:3000
+    volumes:
+    - $PWD/grafana:/var/lib/grafana
+    container_name: grafana
+    depends_on:
+    - prometheus
+
+  py-prom-server:
+    image: py-prom-server
+    ports:
+    - 8082:8080
+    - 80:80
+    environment:
+      WAIT_HOSTS: artifactory:8081, jenkins-docker:8080
+    # - ARTIFACTORY_URL= ${ARTIFACTORY_URL}
+    container_name: py-prom-server
+    depends_on:
+    - jenkins-docker
+    - prometheus
+    - artifactory
+
+  artifactory:
+    image: docker.bintray.io/jfrog/artifactory-oss:latest
+    hostname: artifactory
+    ports:
+    - 8081:8081
+    volumes: 
+    - $PWD/artifactory:/var/opt/jfrog/artifactory
+    container_name: artifactory-oss
+
+  db:
+    image: mongo
+    ports: 
+    - 27017:27017
+    volumes: 
+      - $PWD/mongoDB_Data_Buffer:/data/db
+    container_name: mongodb
+
+  python-cron:
+    image: data_collect
+    depends_on: 
+    - db
+    container_name: python-cron
+
+volumes: 
+  data_buffer:
+  prometheus:
+    external: true

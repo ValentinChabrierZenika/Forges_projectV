@@ -1,0 +1,77 @@
+Started by user [8mha:////4EOMwNKdMIE5olU+Uf4/4/lfBbpxhT63uhLwDZGOznYGAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL9skSg0SWZeQDclyYqwwAAAA==[0mValentin chabrier
+Building in workspace /var/jenkins_home/workspace/test-jenkins
+using credential 6c0e270e-2b58-464f-8e2a-7fe3e328df9a
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ValentinChabrierZenika/hello_world_jenkins # timeout=10
+Fetching upstream changes from https://github.com/ValentinChabrierZenika/hello_world_jenkins
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/ValentinChabrierZenika/hello_world_jenkins +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9f17046b2a1c1f48055b2acdde07cf09b1e16a7b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9f17046b2a1c1f48055b2acdde07cf09b1e16a7b
+Commit message: "test"
+ > git rev-list --no-walk 9f17046b2a1c1f48055b2acdde07cf09b1e16a7b # timeout=10
+[test-jenkins] $ /bin/sh -xe /tmp/jenkins1707336104594830487.sh
++ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                              NAMES
+08d8ada2ab53        python-ml                     "/bin/sh -c 'tail -f…"   16 minutes ago      Up 16 minutes                                                          romantic_sanderson
+81393a9b9ea9        jenkins-docker                "/sbin/tini -- /usr/…"   6 days ago          Up 6 days           0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   condescending_thompson
+b33b5d3f4bba        asashiho/ml-jupyter-python3   "jupyter notebook --…"   6 days ago          Up 6 days           0.0.0.0:6006->6006/tcp, 0.0.0.0:8888->8888/tcp     inspiring_darwin
++ docker stop python-server
+Error response from daemon: No such container: python-server
++ true
++ docker rm python-server
+Error: No such container: python-server
++ true
++ docker build -t flask-sample-one .
+Sending build context to Docker daemon  173.1kB
+Step 1/12 : FROM ubuntu:latest
+ ---> 94e814e2efa8
+Step 2/12 : MAINTAINER Valentin Chabrier "valentin.chabrier@zenika.com"
+ ---> Using cache
+ ---> 8f65dcf9d7b8
+Step 3/12 : RUN apt-get update -y
+ ---> Using cache
+ ---> 55c1d277389e
+Step 4/12 : RUN apt-get install -y python3-pip python3-dev build-essential
+ ---> Using cache
+ ---> 60c23023d290
+Step 5/12 : RUN pip3 install numpy
+ ---> Using cache
+ ---> 75a7677021d0
+Step 6/12 : RUN pip3 install sklearn
+ ---> Using cache
+ ---> d771f61586cd
+Step 7/12 : RUN mkdir models
+ ---> Using cache
+ ---> c6554f1c16d9
+Step 8/12 : COPY . /app
+ ---> Using cache
+ ---> 4b362c6b857c
+Step 9/12 : WORKDIR /app
+ ---> Using cache
+ ---> 5441775af8ae
+Step 10/12 : RUN pip3 install -r requirements.txt
+ ---> Using cache
+ ---> 62f947fcab0b
+Step 11/12 : ENTRYPOINT ["python3"]
+ ---> Using cache
+ ---> 8dd8b13d34f5
+Step 12/12 : CMD ["app.py"]
+ ---> Using cache
+ ---> 9e1d1260fc3f
+Successfully built 9e1d1260fc3f
+Successfully tagged flask-sample-one:latest
++ docker run -d -p 5000:5000 --name python-server flask-sample-one
+1dd6130205579bd8a204cc51e7255272620e5ec61bb1c37024f8da72c46d388f
++ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS                  PORTS                                              NAMES
+1dd613020557        flask-sample-one              "python3 app.py"         1 second ago        Up Less than a second   0.0.0.0:5000->5000/tcp                             python-server
+08d8ada2ab53        python-ml                     "/bin/sh -c 'tail -f…"   16 minutes ago      Up 16 minutes                                                              romantic_sanderson
+81393a9b9ea9        jenkins-docker                "/sbin/tini -- /usr/…"   6 days ago          Up 6 days               0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   condescending_thompson
+b33b5d3f4bba        asashiho/ml-jupyter-python3   "jupyter notebook --…"   6 days ago          Up 6 days               0.0.0.0:6006->6006/tcp, 0.0.0.0:8888->8888/tcp     inspiring_darwin
+Finished: SUCCESS

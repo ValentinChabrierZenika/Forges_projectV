@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>trained_models</repoKey>
+    <path>model_2</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>model_2</name>
+  <created>1556789407401</created>
+  <lastModified>1556789407401</lastModified>
+  <additionalInfo>
+    <createdBy>admin</createdBy>
+    <modifiedBy>admin</modifiedBy>
+    <lastUpdated>1556789407401</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

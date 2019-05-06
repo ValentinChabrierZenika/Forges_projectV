@@ -1,0 +1,57 @@
+Started by upstream project "[8mha:////4NopLmXKoouUPYULHveZkpmC2jTUky65b3Ov7ubDHnC7AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JP3UssSc0sSS1PhckFuL9QGHL8XnygAAAA==[0mevaluate_models" build number [8mha:////4I26xUDTA6+rJiEd7/M2vi3yqrdl5bwhyNQQbDnRlz0rAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZx/az8JP3UssSc0sSS1PhckFuL9U1NAfuqPH7MAAAA[0m55
+originally caused by:
+ Started by user [8mha:////4EOMwNKdMIE5olU+Uf4/4/lfBbpxhT63uhLwDZGOznYGAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL9skSg0SWZeQDclyYqwwAAAA==[0mValentin chabrier
+Obtained Jenkinsfile from git https://github.com/ValentinChabrierZenika/production_deployment.git
+Running in Durability level: MAX_SURVIVABILITY
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+WorkflowScript: 8: Unknown stage section "echo". Starting with version 0.5, steps in a stage must be in a ‘steps’ block. @ line 8, column 9.
+           stage('Download metrics'){
+           ^
+
+WorkflowScript: 8: Unknown stage section "sh". Starting with version 0.5, steps in a stage must be in a ‘steps’ block. @ line 8, column 9.
+           stage('Download metrics'){
+           ^
+
+WorkflowScript: 8: Multiple occurrences of the sh section @ line 8, column 9.
+           stage('Download metrics'){
+           ^
+
+WorkflowScript: 8: Unknown stage section "sh". Starting with version 0.5, steps in a stage must be in a ‘steps’ block. @ line 8, column 9.
+           stage('Download metrics'){
+           ^
+
+WorkflowScript: 8: Unknown stage section "rtDownload". Starting with version 0.5, steps in a stage must be in a ‘steps’ block. @ line 8, column 9.
+           stage('Download metrics'){
+           ^
+
+WorkflowScript: 8: Multiple occurrences of the rtDownload section @ line 8, column 9.
+           stage('Download metrics'){
+           ^
+
+WorkflowScript: 8: Unknown stage section "rtDownload". Starting with version 0.5, steps in a stage must be in a ‘steps’ block. @ line 8, column 9.
+           stage('Download metrics'){
+           ^
+
+WorkflowScript: 8: Expected one of "steps", "stages", or "parallel" for stage "Download metrics" @ line 8, column 9.
+           stage('Download metrics'){
+           ^
+
+8 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:310)
+	at org.codehaus.groovy.control.CompilationUnit.applyToPrimaryClassNodes(CompilationUnit.java:1085)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:603)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:581)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:558)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:298)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:268)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:688)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:700)
+	at org.jenkinsci.plugins.workflow.cps.CpsGroovyShell.doParse(CpsGroovyShell.java:133)
+	at org.jenkinsci.plugins.workflow.cps.CpsGroovyShell.reparse(CpsGroovyShell.java:126)
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.parseScript(CpsFlowExecution.java:561)
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.start(CpsFlowExecution.java:522)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:320)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Finished: FAILURE

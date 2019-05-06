@@ -1,0 +1,12 @@
+commit d2b94e1ce2776ae7e282889c1b7f086bd10453b8
+tree 035bb4b79af76f77fa47908610bbf928eb6926d8
+parent 9f17046b2a1c1f48055b2acdde07cf09b1e16a7b
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-01 16:08:34 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-01 16:08:34 +0200
+
+    modify jenkinsfile
+
+
+
+:100644 100644 347e323d0f38730cfba0b0250a0e4e284adfe868 a3172c2a1a9af09b89d54780c7cae0fb6407d01c M	models/model.pkl
+:100644 100644 ae09db0388eb72fa867142f8cfb9f6bbce1611b7 2fa1a01d41363a6e0572a36dcd3a7040eca61fc9 M	requirements.txt

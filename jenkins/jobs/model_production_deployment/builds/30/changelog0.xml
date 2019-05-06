@@ -1,0 +1,11 @@
+commit 167495d829712880f8a295eaa5cf0950811a9772
+tree 341433d65b99cd11b61f2159f09b9ac1948995f8
+parent a2bfca59b1bc5a1f73ddd9486dc9d76f6f93236e
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-03 17:36:51 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-03 17:36:51 +0200
+
+     modif of deploy script and jenkinsfile
+
+
+
+:100644 100644 ca3c56d109b96b00fd8f80d5bcf5978df7994991 61276548f8703c2767772518f6def49d4a7c0c48 M	Jenkinsfile

@@ -1,0 +1,11 @@
+commit bad69de0bde09b7c83475471d1d2fa6d1155e4ee
+tree e972d0c821356ffe52b241452082bffd1a8ef7ad
+parent 8716a00c17ef961f6eb5af2fadc4d93859e67709
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-03 14:30:10 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-05-03 14:30:10 +0200
+
+     modif comparison and evaluation scripts
+
+
+
+:100644 100644 53924957285f66a6032eaa403b18d5db03c82647 b403b30d6fce833fe9b4823bfc31fb7b4259fb84 M	Jenkinsfile

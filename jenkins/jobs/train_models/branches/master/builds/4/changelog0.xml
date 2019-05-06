@@ -1,0 +1,11 @@
+commit f4248afadbaf2bd209182bf1abab9f77d9f3e1ca
+tree 91ba7a202dd7e7a8b735083bf88fed20dee31e70
+parent 41c28cd2c20239916b2256842fd09766578829e4
+author valentin <valentin.chabrier@zenika.com> 2019-05-02 11:27:12 +0200
+committer valentin <valentin.chabrier@zenika.com> 2019-05-02 11:27:12 +0200
+
+    update naming
+
+
+
+:100644 100644 33f6695c0493fb8530511adbd49eff212f32bb79 c3401b974026cb2080e2edd880d80c15456763dc M	Jenkinsfile

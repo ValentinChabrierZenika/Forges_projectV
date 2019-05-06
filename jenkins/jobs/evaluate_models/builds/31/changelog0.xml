@@ -1,0 +1,11 @@
+commit ad799a9aa9c356f494df47abecd042906694a356
+tree bfce8358683a1c616e261bcde96f4f51ca39ad42
+parent 7b8a8a6aff505c87181029178fbd4e2aa4280b92
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 15:57:58 +0200
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-04-30 15:57:58 +0200
+
+    debug in jenkinsfile
+
+
+
+:100644 100644 71d99613df463cbb45bba7364ce78c6e1483fef1 175bbd0f3681eece9d945368b34fe45f63b9053b M	Jenkinsfile

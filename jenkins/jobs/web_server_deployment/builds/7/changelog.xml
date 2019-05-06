@@ -1,0 +1,11 @@
+commit 7d82887a24aa378b65f5f2b627796cdd296c1a07
+tree f8c3b8648255e2ab5646f5ec5df994e274c2cb83
+parent f193288255f990be259faef662442146f3cb5623
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-03-25 15:17:46 +0100
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-03-25 15:17:46 +0100
+
+    add mkdir models in dockerfile
+
+
+
+:100644 100644 def537b02e01fcfb4e17c35b261d7a410170c2b0 cf12794ac41887884a569ebb4d5f4e205b5f1097 M	Dockerfile

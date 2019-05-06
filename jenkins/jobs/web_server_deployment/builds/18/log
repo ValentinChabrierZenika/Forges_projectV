@@ -1,0 +1,70 @@
+Started by user [8mha:////4EOMwNKdMIE5olU+Uf4/4/lfBbpxhT63uhLwDZGOznYGAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL9skSg0SWZeQDclyYqwwAAAA==[0mValentin chabrier
+Building in workspace /var/jenkins_home/workspace/test-jenkins
+using credential 6c0e270e-2b58-464f-8e2a-7fe3e328df9a
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ValentinChabrierZenika/hello_world_jenkins # timeout=10
+Fetching upstream changes from https://github.com/ValentinChabrierZenika/hello_world_jenkins
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/ValentinChabrierZenika/hello_world_jenkins +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7d82887a24aa378b65f5f2b627796cdd296c1a07 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7d82887a24aa378b65f5f2b627796cdd296c1a07
+Commit message: "add mkdir models in dockerfile"
+ > git rev-list --no-walk 7d82887a24aa378b65f5f2b627796cdd296c1a07 # timeout=10
+[test-jenkins] $ /bin/sh -xe /tmp/jenkins4952959244087300159.sh
++ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                              NAMES
+0f6faa4d810c        flask-sample-one              "python3 app.py"         2 minutes ago       Up 2 minutes        0.0.0.0:5000->5000/tcp                             python-server
+a83aa6c24479        jenkins-docker                "/sbin/tini -- /usr/…"   19 minutes ago      Up 19 minutes       0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   elastic_bhabha
+dc06f2d439a3        asashiho/ml-jupyter-python3   "jupyter notebook --…"   About an hour ago   Up About an hour    0.0.0.0:6006->6006/tcp, 0.0.0.0:8888->8888/tcp     ecstatic_leakey
++ docker stop python-server
+python-server
++ docker rm python-server
+python-server
++ docker build -t flask-sample-one .
+Sending build context to Docker daemon  130.6kB
+Step 1/10 : FROM ubuntu:latest
+ ---> 94e814e2efa8
+Step 2/10 : MAINTAINER Valentin Chabrier "valentin.chabrier@zenika.com"
+ ---> Using cache
+ ---> 8f65dcf9d7b8
+Step 3/10 : RUN apt-get update -y
+ ---> Using cache
+ ---> 55c1d277389e
+Step 4/10 : RUN apt-get install -y python3-pip python3-dev build-essential
+ ---> Using cache
+ ---> 60c23023d290
+Step 5/10 : RUN mkdir models
+ ---> Using cache
+ ---> 31f9223c0c72
+Step 6/10 : COPY . /app
+ ---> Using cache
+ ---> 1ca64a666333
+Step 7/10 : WORKDIR /app
+ ---> Using cache
+ ---> c3eb0073c9ee
+Step 8/10 : RUN pip3 install -r requirements.txt
+ ---> Using cache
+ ---> 3bc70bac1efc
+Step 9/10 : ENTRYPOINT ["python3"]
+ ---> Using cache
+ ---> 3f00ee55d75e
+Step 10/10 : CMD ["app.py"]
+ ---> Using cache
+ ---> 4a46c0203d60
+Successfully built 4a46c0203d60
+Successfully tagged flask-sample-one:latest
++ ls /models
+test.pkl
++ docker run -d -p 5000:5000 -v /var/jenkins_home/workspace/test-jenkins/Python/models:/models --name python-server flask-sample-one
+6509bf6fa9c69edb3146a394c9a8583d02c7d769767297c3a1e2d9c4d1e9d940
++ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS                  PORTS                                              NAMES
+6509bf6fa9c6        flask-sample-one              "python3 app.py"         1 second ago        Up Less than a second   0.0.0.0:5000->5000/tcp                             python-server
+a83aa6c24479        jenkins-docker                "/sbin/tini -- /usr/…"   19 minutes ago      Up 19 minutes           0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   elastic_bhabha
+dc06f2d439a3        asashiho/ml-jupyter-python3   "jupyter notebook --…"   About an hour ago   Up About an hour        0.0.0.0:6006->6006/tcp, 0.0.0.0:8888->8888/tcp     ecstatic_leakey
+Finished: SUCCESS

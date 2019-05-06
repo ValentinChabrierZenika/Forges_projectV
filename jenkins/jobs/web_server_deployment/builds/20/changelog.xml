@@ -1,0 +1,11 @@
+commit 13b5506d195a987e1f2d555924560b98e7fc1615
+tree 9c291b35aaaec96304c475f2fe5f3311291e5cd8
+parent 7d82887a24aa378b65f5f2b627796cdd296c1a07
+author Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-03-25 16:14:46 +0100
+committer Valentin Chabrier <valentinchabrier@valentins-mbp.home> 2019-03-25 16:14:46 +0100
+
+    trying to deploy model
+
+
+
+:100644 100644 13a6dd53b21b9b022776df0523b9706b8caf8193 6523c73eeb69d232fd0612b08fa556138e991ba8 M	app.py
