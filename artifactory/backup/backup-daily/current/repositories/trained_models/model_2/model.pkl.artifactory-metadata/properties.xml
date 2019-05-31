@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <properties>
-  <vcs.revision>6ae13ee8df0aa69792667116f59b6e83f4bb0369</vcs.revision>
-  <build.timestamp>1556789363555</build.timestamp>
-  <build.name>train_models :: model_2</build.name>
-  <build.number>5</build.number>
+  <vcs.revision>142abee3fafd08e4edf02fa6f0ed3c31d536be05</vcs.revision>
+  <build.timestamp>1559207700417</build.timestamp>
+  <build.name>scan_models :: model_2</build.name>
+  <build.number>75</build.number>
 </properties>

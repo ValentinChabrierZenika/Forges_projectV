@@ -79,6 +79,8 @@ services:
     image: data_collect
     depends_on: 
     - db
+    volumes: 
+      - $PWD/data_velov:/root/data_velov/
     container_name: python-cron
 
 volumes: 

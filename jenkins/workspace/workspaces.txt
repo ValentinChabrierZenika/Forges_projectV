@@ -1,4 +1,4 @@
-train_models/master
-train_models_master
-train_models/model_2
-train_models_model_2
+scan_models/model_1
+scan_models_model_1
+scan_models/model_2
+scan_models_model_2

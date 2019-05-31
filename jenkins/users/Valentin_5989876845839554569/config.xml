@@ -86,7 +86,7 @@
         </entry>
         <entry>
           <string>train_models/model_2</string>
-          <boolean>true</boolean>
+          <boolean>false</boolean>
         </entry>
       </data>
     </hudson.plugins.favorite.user.FavoriteUserProperty>

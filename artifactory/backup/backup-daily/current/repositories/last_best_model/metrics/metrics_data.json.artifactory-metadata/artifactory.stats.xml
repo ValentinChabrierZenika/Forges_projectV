@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <artifactory.stats>
-  <downloadCount>5</downloadCount>
-  <lastDownloaded>1556898237772</lastDownloaded>
+  <downloadCount>22</downloadCount>
+  <lastDownloaded>1559208059955</lastDownloaded>
   <lastDownloadedBy>admin</lastDownloadedBy>
   <remoteDownloadCount>0</remoteDownloadCount>
   <remoteLastDownloaded>0</remoteLastDownloaded>

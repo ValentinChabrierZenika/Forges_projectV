@@ -3,7 +3,7 @@
   <useCredentialsPlugin>false</useCredentialsPlugin>
   <artifactoryServers>
     <org.jfrog.hudson.ArtifactoryServer>
-      <url>http://5e50030f.ngrok.io/artifactory</url>
+      <url>http://b6553aa5.ngrok.io/artifactory</url>
       <id>Artifactory_ML_Server</id>
       <timeout>300</timeout>
       <bypassProxy>false</bypassProxy>

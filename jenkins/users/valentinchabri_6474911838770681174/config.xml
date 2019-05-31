@@ -50,6 +50,18 @@
           <string>ml_model_projectV/master</string>
           <boolean>true</boolean>
         </entry>
+        <entry>
+          <string>train_models/model_1</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>test/model_2</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>test/master</string>
+          <boolean>true</boolean>
+        </entry>
       </data>
     </hudson.plugins.favorite.user.FavoriteUserProperty>
   </properties>

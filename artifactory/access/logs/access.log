@@ -1258,3 +1258,884 @@
 2019-05-06 07:21:16,415 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting home...
 2019-05-06 08:00:59,004 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557129623389]
 2019-05-06 08:00:59,011 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 13:27:14,717 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 13:27:14,771 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 13:27:14,776 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 13:27:27,909 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 13:27:27,916 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 13:27:31,800 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 13:27:34,534 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 13:27:37,201 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 13:27:37,448 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 13:27:39,439 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 13:27:41,090 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 13:27:41,733 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 13:27:45,502 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 13:27:45,515 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 13:27:51,175 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 40.39 seconds (JVM running for 46.449)
+2019-05-06 13:27:53,996 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId d56358978478046c:7c953719:16a8d53a410:-8000
+2019-05-06 13:27:54,601 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 94db3d37-58f9-48ad-8c39-8aae7c8c5a47 nodeId d56358978478046c:7c953719:16a8d53a410:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 13:38:18,045 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 13:38:18,081 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 13:38:18,086 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 13:38:35,155 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 13:38:35,164 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 13:38:38,069 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 13:38:41,901 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 13:38:43,236 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 13:38:43,347 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 13:38:45,627 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 13:38:46,736 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 13:38:47,130 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 13:38:51,776 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 13:38:51,794 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 13:38:56,455 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 43.528 seconds (JVM running for 49.507)
+2019-05-06 13:39:00,623 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 40d7b7a21198a91a:23d3dc8e:16a8d5dbb89:-8000
+2019-05-06 13:39:01,192 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 61fe578f-f4a0-4ce9-9d53-9bdad8837ec8 nodeId 40d7b7a21198a91a:23d3dc8e:16a8d5dbb89:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 13:42:58,360 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 13:42:58,429 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 13:42:58,431 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 13:43:12,243 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 13:43:12,247 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 13:43:15,664 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 13:43:20,163 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 13:43:21,744 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 13:43:21,926 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 13:43:23,426 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 13:43:24,289 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 13:43:24,824 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 13:43:29,041 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 13:43:29,072 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 13:43:34,802 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 40.749 seconds (JVM running for 46.493)
+2019-05-06 13:43:38,397 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 9f684ecf50e4593f:63f0e69b:16a8d620931:-8000
+2019-05-06 13:43:39,050 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id db3a4485-f575-479d-b14d-7ab781d89270 nodeId 9f684ecf50e4593f:63f0e69b:16a8d620931:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 13:47:36,427 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 13:47:36,527 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 13:47:36,531 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 13:47:53,420 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 13:47:53,429 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 13:47:58,796 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 13:48:00,879 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 13:48:02,280 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 13:48:02,447 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 13:48:03,634 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 13:48:05,188 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 13:48:05,659 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 13:48:09,974 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 13:48:09,995 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 13:48:15,368 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 43.09 seconds (JVM running for 48.907)
+2019-05-06 13:48:19,116 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 248c19638b89339a:-4c4ac930:16a8d664875:-8000
+2019-05-06 13:48:19,935 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 6fee741f-e583-4bbc-a27a-c62545c04097 nodeId 248c19638b89339a:-4c4ac930:16a8d664875:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 14:16:24,671 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 14:16:24,710 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 14:16:24,712 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 14:16:40,026 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 14:16:40,031 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 14:16:43,479 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 14:16:46,043 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 14:16:47,320 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 14:16:47,475 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 14:16:49,223 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 14:16:50,342 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 14:16:50,911 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 14:16:54,484 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 14:16:54,514 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 14:17:00,259 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 39.71 seconds (JVM running for 44.888)
+2019-05-06 14:17:03,394 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 191c8cfba660eca7:75963076:16a8d80a477:-8000
+2019-05-06 14:17:03,940 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id aaa820c0-5c7c-49ea-abb7-ee1c0ec35c16 nodeId 191c8cfba660eca7:75963076:16a8d80a477:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 14:23:24,493 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 14:23:24,552 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 14:23:24,555 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 14:23:39,325 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 14:23:39,333 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 14:23:42,739 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 14:23:45,860 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 14:23:47,043 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 14:23:47,157 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 14:23:48,552 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 14:23:49,728 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 14:23:50,327 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 14:23:54,845 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 14:23:54,856 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 14:23:59,979 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 39.638 seconds (JVM running for 45.573)
+2019-05-06 14:24:02,885 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId a3763bfcc999a88f:-3cdc8d03:16a8d870e8a:-8000
+2019-05-06 14:24:03,755 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id de951e1c-10d4-461b-b031-116d4fc57545 nodeId a3763bfcc999a88f:-3cdc8d03:16a8d870e8a:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 14:28:43,762 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 14:28:43,789 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 14:28:43,792 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 14:28:58,797 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 14:28:58,807 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 14:29:04,070 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 14:29:07,748 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 14:29:10,519 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 14:29:10,711 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 14:29:11,696 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 14:29:12,579 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 14:29:13,030 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 14:29:16,745 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 14:29:16,757 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 14:29:22,047 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 43.141 seconds (JVM running for 49.097)
+2019-05-06 14:29:25,111 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId fb2b00e4fc0c2f25:4863b3bd:16a8d8bec32:-8000
+2019-05-06 14:29:25,800 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 2607dc63-3c8e-462a-ad71-76f8d5161f2b nodeId fb2b00e4fc0c2f25:4863b3bd:16a8d8bec32:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 14:31:21,320 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 14:31:21,362 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 14:31:21,365 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 14:33:37,474 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 14:33:37,566 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 14:33:37,567 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 14:33:53,960 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 14:33:53,964 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 14:33:58,138 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 14:34:01,351 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 14:34:03,750 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 14:34:03,870 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 14:34:06,727 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 14:34:08,355 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 14:34:09,349 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 14:34:14,528 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 14:34:14,542 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 14:34:19,656 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 45.87 seconds (JVM running for 52.115)
+2019-05-06 14:34:22,750 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 7f246435eed5279f:93db410:16a8d906b85:-8000
+2019-05-06 14:34:23,543 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 3adfb4b5-f7cf-4b22-90f4-cac821a697b2 nodeId 7f246435eed5279f:93db410:16a8d906b85:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 14:48:59,375 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 14:48:59,403 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 14:48:59,414 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 14:49:13,096 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 14:49:13,112 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 14:49:16,683 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 14:49:20,153 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 14:49:21,963 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 14:49:22,089 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 14:49:24,008 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 14:49:25,038 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 14:49:25,527 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 14:49:30,035 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 14:49:30,048 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 14:49:35,373 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 40.292 seconds (JVM running for 46.869)
+2019-05-06 14:49:38,662 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 398a000d1da8e675:-1ef77204:16a8d9e7864:-8000
+2019-05-06 14:49:39,172 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 1800c683-2d31-4c67-b07f-b98e5393444c nodeId 398a000d1da8e675:-1ef77204:16a8d9e7864:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 14:51:48,144 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 14:51:48,171 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 14:51:48,174 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 14:52:00,849 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 14:52:00,857 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 14:52:04,647 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 14:52:08,368 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 14:52:10,267 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 14:52:10,565 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 14:52:13,354 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 14:52:15,058 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 14:52:15,818 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 14:52:19,304 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 14:52:19,316 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 14:52:25,095 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 40.418 seconds (JVM running for 45.654)
+2019-05-06 14:52:28,218 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 54f0e914e34f2089:-73fbbed0:16a8da11264:-8000
+2019-05-06 14:52:28,808 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 25308202-7706-480b-a23a-5d270b6efc94 nodeId 54f0e914e34f2089:-73fbbed0:16a8da11264:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 14:56:49,740 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 14:56:49,775 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 14:56:49,812 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 14:57:04,199 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 14:57:04,206 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 14:57:07,373 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 14:57:09,701 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 14:57:10,969 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 14:57:11,347 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 14:57:13,551 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 14:57:15,118 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 14:57:15,714 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 14:57:19,746 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 14:57:19,760 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 14:57:24,941 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 39.227 seconds (JVM running for 45.388)
+2019-05-06 14:57:27,772 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 07426e2bcb2fc65d:eb199a1:16a8da5a714:-8000
+2019-05-06 14:57:28,489 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 4a02ca09-2243-4057-8e0b-20111e3a8d2d nodeId 07426e2bcb2fc65d:eb199a1:16a8da5a714:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 15:04:28,675 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 15:04:28,705 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 15:04:28,710 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 15:04:43,428 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 15:04:43,446 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 15:04:46,754 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 15:04:49,962 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 15:04:51,365 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 15:04:51,513 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 15:04:54,304 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 15:04:55,676 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 15:04:56,192 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 15:05:00,243 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 15:05:00,265 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 15:05:05,993 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 40.837 seconds (JVM running for 47.18)
+2019-05-06 15:05:09,396 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 5b21e093a9a3911c:3bb350e7:16a8daca9ef:-8000
+2019-05-06 15:05:10,026 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 17f748f7-4be1-44e7-981c-70ff1ba6a4d6 nodeId 5b21e093a9a3911c:3bb350e7:16a8daca9ef:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 15:26:13,602 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 15:26:13,711 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 15:26:13,724 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 15:26:28,514 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 15:26:28,519 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 15:26:31,783 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 15:26:35,105 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 15:26:36,664 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 15:26:36,886 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 15:26:39,407 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 15:26:41,440 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 15:26:42,049 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 15:26:45,811 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 15:26:45,831 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 15:26:51,910 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 42.284 seconds (JVM running for 48.19)
+2019-05-06 15:26:55,832 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 6b0f11aaeea45a8c:57a751d3:16a8dc091ed:-8000
+2019-05-06 15:26:56,585 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id f8565269-eb70-4fb8-99b0-317e6a83ed42 nodeId 6b0f11aaeea45a8c:57a751d3:16a8dc091ed:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 15:29:55,170 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-06 15:29:55,218 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-06 15:29:55,222 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-06 15:30:10,348 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-06 15:30:10,353 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-06 15:30:14,766 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 15:30:18,520 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-06 15:30:19,885 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-06 15:30:20,085 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-06 15:30:21,513 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-06 15:30:22,558 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-06 15:30:23,081 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-06 15:30:26,902 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-06 15:30:26,916 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-06 15:30:32,462 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 41.5 seconds (JVM running for 46.926)
+2019-05-06 15:30:35,301 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 1ccc35898ca31112:-4b748cc5:16a8dc3f418:-8000
+2019-05-06 15:30:36,062 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 3084ce95-4f01-4352-92c9-8e8bcf7b01ab nodeId 1ccc35898ca31112:-4b748cc5:16a8dc3f418:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-06 16:27:50,279 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557157207982]
+2019-05-06 16:27:50,323 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 17:00:52,093 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557160125721]
+2019-05-06 17:00:52,157 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 18:27:23,560 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557162099212]
+2019-05-06 18:27:23,566 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 19:26:32,198 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557167289348]
+2019-05-06 19:26:32,204 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 20:25:55,465 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557170877302]
+2019-05-06 20:25:55,483 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 21:43:43,872 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557174411097]
+2019-05-06 21:43:43,880 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-06 23:30:29,711 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557179078956]
+2019-05-06 23:30:29,716 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 02:30:17,830 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557189014913]
+2019-05-07 02:30:17,837 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting groups...
+2019-05-07 02:30:17,913 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 02:30:18,299 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_events...
+2019-05-07 02:30:18,500 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting tokens...
+2019-05-07 02:30:18,591 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_servers...
+2019-05-07 02:30:18,722 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting permissions...
+2019-05-07 02:30:18,950 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting servers...
+2019-05-07 02:30:18,968 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting users...
+2019-05-07 02:30:19,125 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting config...
+2019-05-07 02:30:19,214 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting encryption...
+2019-05-07 02:30:19,268 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting home...
+2019-05-07 03:08:08,297 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557196279145]
+2019-05-07 03:08:08,304 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 05:08:43,007 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557198519347]
+2019-05-07 05:08:43,013 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 06:35:10,176 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557205773310]
+2019-05-07 06:35:10,184 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 07:23:02,927 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557210956797]
+2019-05-07 07:23:02,932 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 08:01:19,182 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557216032614]
+2019-05-07 08:01:19,193 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 08:05:25,740 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557216119251]
+2019-05-07 08:05:25,759 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 08:09:13,349 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-07 08:09:13,404 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-07 08:09:13,407 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-07 08:09:27,262 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-07 08:09:27,268 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-07 08:09:30,630 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 08:09:33,011 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-07 08:09:34,855 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-07 08:09:35,028 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-07 08:09:37,523 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-07 08:09:39,707 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-07 08:09:40,130 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-07 08:09:43,977 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-07 08:09:43,992 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-07 08:09:49,072 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 39.838 seconds (JVM running for 45.42)
+2019-05-07 08:09:52,191 [http-nio-8040-exec-7] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId ef2144aab16f2e44:2d0de391:16a9156d819:-8000
+2019-05-07 08:09:52,800 [http-nio-8040-exec-7] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 02127387-9ef2-4d1e-a770-52174803f4af nodeId ef2144aab16f2e44:2d0de391:16a9156d819:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-07 08:18:28,521 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-07 08:18:28,537 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-07 08:18:28,540 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-07 08:18:41,691 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-07 08:18:41,696 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-07 08:18:46,434 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 08:18:49,693 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-07 08:18:51,401 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-07 08:18:51,535 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-07 08:18:53,094 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-07 08:18:54,436 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-07 08:18:55,079 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-07 08:18:59,176 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-07 08:18:59,209 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-07 08:19:04,669 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 40.316 seconds (JVM running for 46.748)
+2019-05-07 08:19:07,672 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId c8c70f62e4b13ec5:1eb36aa0:16a915f4dc9:-8000
+2019-05-07 08:19:08,239 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 5dc68c48-4de9-42e7-8409-d10224c7af3c nodeId c8c70f62e4b13ec5:1eb36aa0:16a915f4dc9:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-07 08:29:17,130 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-07 08:29:17,164 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-07 08:29:17,177 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-07 08:29:33,269 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-07 08:29:33,276 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-07 08:29:36,737 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 08:29:38,988 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-07 08:29:41,239 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-07 08:29:41,589 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-07 08:29:42,975 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-07 08:29:44,107 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-07 08:29:44,677 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-07 08:29:50,088 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-07 08:29:50,099 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-07 08:29:55,513 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 43.256 seconds (JVM running for 49.551)
+2019-05-07 08:29:59,099 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId bb5f44ed9d45c6f6:-42c38983:16a91692fcb:-8000
+2019-05-07 08:29:59,879 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 497e7764-efd9-41fc-91ae-3711e85b00db nodeId bb5f44ed9d45c6f6:-42c38983:16a91692fcb:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-07 08:33:50,664 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-07 08:33:50,720 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-07 08:33:50,724 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-07 08:34:06,710 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-07 08:34:06,722 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-07 08:34:11,704 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 08:34:14,608 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-07 08:34:15,688 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-07 08:34:15,766 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-07 08:34:17,590 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-07 08:34:18,712 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-07 08:34:19,105 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-07 08:34:24,386 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-07 08:34:24,404 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-07 08:34:29,315 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 43.061 seconds (JVM running for 48.792)
+2019-05-07 08:34:33,157 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 16a977e178fdbba5:-782f5f95:16a916d60f5:-8000
+2019-05-07 08:34:34,247 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id b7268ccd-27c3-4c3e-9fea-5a8fa5a9b264 nodeId 16a977e178fdbba5:-782f5f95:16a916d60f5:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-07 08:45:18,107 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-07 08:45:18,126 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-07 08:45:18,129 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-07 08:45:36,540 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-07 08:45:36,546 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-07 08:45:40,473 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 08:45:42,916 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-07 08:45:44,667 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-07 08:45:44,783 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-07 08:45:46,776 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-07 08:45:48,832 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-07 08:45:49,528 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-07 08:45:53,510 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-07 08:45:53,532 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-07 08:45:59,582 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 46.034 seconds (JVM running for 51.296)
+2019-05-07 08:46:02,847 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId e7a9b1e01bd47022:-d231063:16a9177dd9d:-8000
+2019-05-07 08:46:03,498 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id e45c17f3-2592-4d3f-94aa-b4e9e3d46c5a nodeId e7a9b1e01bd47022:-d231063:16a9177dd9d:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-07 08:57:45,304 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-07 08:57:45,326 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-07 08:57:45,341 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-07 08:57:59,674 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-07 08:57:59,711 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-07 08:58:03,798 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 08:58:08,459 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-07 08:58:10,103 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-07 08:58:10,238 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-07 08:58:11,562 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-07 08:58:13,145 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-07 08:58:13,801 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-07 08:58:17,953 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-07 08:58:17,967 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-07 08:58:23,576 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 42.71 seconds (JVM running for 49.771)
+2019-05-07 08:58:26,476 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 2a5708a8a86968f1:15b08ac6:16a918341d8:-8000
+2019-05-07 08:58:27,298 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 62023897-2bf8-4de8-9ac5-9732ad589cd9 nodeId 2a5708a8a86968f1:15b08ac6:16a918341d8:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-07 09:10:16,007 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-07 09:10:16,033 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-07 09:10:16,057 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-07 09:10:31,256 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-07 09:10:31,260 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-07 09:10:34,590 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 09:10:37,679 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-07 09:10:39,055 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-07 09:10:39,200 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-07 09:10:41,117 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-07 09:10:42,161 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-07 09:10:42,724 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-07 09:10:46,490 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-07 09:10:46,502 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-07 09:10:51,407 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 40.34 seconds (JVM running for 45.576)
+2019-05-07 09:10:55,247 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId bf4e8b54aaa581d3:8eb5e53:16a918eb97f:-8000
+2019-05-07 09:10:55,763 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 62dd41b6-27a4-4570-91c3-f05b1b8ee782 nodeId bf4e8b54aaa581d3:8eb5e53:16a918eb97f:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-07 09:24:04,758 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-07 09:24:04,775 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-07 09:24:04,778 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-07 09:24:19,232 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-07 09:24:19,236 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-07 09:24:23,817 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 09:24:26,752 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-07 09:24:28,450 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-07 09:24:28,591 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-07 09:24:30,417 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-07 09:24:31,778 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-07 09:24:32,175 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-07 09:24:36,211 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-07 09:24:36,237 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-07 09:24:41,553 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 41.374 seconds (JVM running for 46.643)
+2019-05-07 09:24:44,739 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 51d074ef653e4455:-6d4c5dc0:16a919b5eef:-8000
+2019-05-07 09:24:45,333 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id e00390f9-2944-47c0-a143-a7d7b44b2d03 nodeId 51d074ef653e4455:-6d4c5dc0:16a919b5eef:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-07 09:29:27,532 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-07 09:29:27,643 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-07 09:29:27,649 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-07 09:29:41,545 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-07 09:29:41,550 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-07 09:29:46,030 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 09:29:50,647 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-07 09:29:52,068 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-07 09:29:52,238 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-07 09:29:53,696 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-07 09:29:54,869 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-07 09:29:55,484 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-07 09:30:00,666 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-07 09:30:00,684 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-07 09:30:06,334 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 43.049 seconds (JVM running for 48.854)
+2019-05-07 09:30:10,273 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId fbe197b7bf3229ac:40a5761:16a91a04ba4:-8000
+2019-05-07 09:30:10,874 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id f3bb406e-136e-4e13-b305-79a098c45356 nodeId fbe197b7bf3229ac:40a5761:16a91a04ba4:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-07 11:24:28,681 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557224095369]
+2019-05-07 11:24:28,725 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 12:13:59,694 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557228313872]
+2019-05-07 12:13:59,700 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 12:28:14,281 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557231999966]
+2019-05-07 12:28:14,295 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 14:54:15,095 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557240531993]
+2019-05-07 14:54:15,113 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 18:01:39,092 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557244893586]
+2019-05-07 18:01:39,112 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 19:47:11,631 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557252104165]
+2019-05-07 19:47:11,728 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-07 23:48:03,795 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557258484371]
+2019-05-07 23:48:04,131 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-08 00:30:14,366 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557272911760]
+2019-05-08 00:30:14,661 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-08 04:02:50,016 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557275439938]
+2019-05-08 04:02:50,061 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-08 04:02:54,271 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting groups...
+2019-05-08 04:02:54,343 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_events...
+2019-05-08 04:02:54,401 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting tokens...
+2019-05-08 04:02:54,454 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_servers...
+2019-05-08 04:02:54,492 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting permissions...
+2019-05-08 04:02:54,550 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting servers...
+2019-05-08 04:02:54,557 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting users...
+2019-05-08 04:02:54,596 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting config...
+2019-05-08 04:02:54,625 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting encryption...
+2019-05-08 04:02:54,640 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting home...
+2019-05-08 15:30:27,412 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557288195399]
+2019-05-08 15:30:27,419 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-09 06:30:21,754 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting groups...
+2019-05-09 06:30:21,773 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_events...
+2019-05-09 06:30:21,777 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting tokens...
+2019-05-09 06:30:21,803 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_servers...
+2019-05-09 06:30:21,808 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting permissions...
+2019-05-09 06:30:21,837 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting servers...
+2019-05-09 06:30:21,845 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting users...
+2019-05-09 06:30:21,879 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting config...
+2019-05-09 06:30:21,927 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting encryption...
+2019-05-09 06:30:21,950 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting home...
+2019-05-09 06:30:24,020 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557329452492]
+2019-05-09 06:30:24,034 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-09 07:15:02,879 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557383434838]
+2019-05-09 07:15:02,888 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-09 09:59:36,294 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557395817628]
+2019-05-09 09:59:36,315 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-09 10:01:03,318 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557396026386]
+2019-05-09 10:01:03,338 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-09 10:56:20,175 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557397187497]
+2019-05-09 10:56:20,184 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-09 11:11:55,573 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557399445894]
+2019-05-09 11:11:55,599 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-09 13:28:11,248 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557408450564]
+2019-05-09 13:28:11,267 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-09 13:36:49,935 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557408542704]
+2019-05-09 13:36:49,952 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-09 17:18:14,597 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557415092253]
+2019-05-09 17:18:14,605 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-09 19:17:58,043 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557422294634]
+2019-05-09 19:17:58,154 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-09 21:20:29,531 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557429624149]
+2019-05-09 21:20:29,678 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-09 23:21:01,379 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557436859046]
+2019-05-09 23:21:01,546 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-10 03:18:47,463 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting groups...
+2019-05-10 03:18:47,485 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_events...
+2019-05-10 03:18:47,488 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting tokens...
+2019-05-10 03:18:47,503 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_servers...
+2019-05-10 03:18:47,507 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting permissions...
+2019-05-10 03:18:47,530 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting servers...
+2019-05-10 03:18:47,536 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting users...
+2019-05-10 03:18:47,575 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting config...
+2019-05-10 03:18:47,602 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting encryption...
+2019-05-10 03:18:47,619 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting home...
+2019-05-10 03:18:49,533 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557444080358]
+2019-05-10 03:18:49,548 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-10 06:00:14,870 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557458353325]
+2019-05-10 07:26:58,049 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-10 09:03:15,101 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557478936843]
+2019-05-10 09:03:15,108 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-10 11:09:00,816 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557484173744]
+2019-05-10 11:09:00,827 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-10 11:56:25,041 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557486573064]
+2019-05-10 11:56:25,045 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-10 14:08:27,489 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557496827447]
+2019-05-10 14:08:27,496 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-10 15:57:16,899 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557503390192]
+2019-05-10 15:57:16,906 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-10 16:20:36,699 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557504998152]
+2019-05-10 16:20:36,707 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-10 16:28:23,267 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557505623406]
+2019-05-10 16:28:23,286 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-10 16:58:46,352 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1557505733308]
+2019-05-10 16:58:46,358 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-20 08:44:39,171 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-20 08:44:39,272 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-20 08:44:39,282 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-20 08:45:01,173 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-20 08:45:01,186 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-20 08:45:05,694 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-20 08:45:08,870 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-20 08:45:10,858 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-20 08:45:11,033 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-20 08:45:12,347 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-20 08:45:14,532 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-20 08:45:15,150 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-20 08:45:21,379 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-20 08:45:21,406 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-20 08:45:28,090 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 55.277 seconds (JVM running for 63.426)
+2019-05-20 08:45:33,284 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 4a4d94f0b251d385:-3298f6dc:16ad469e6a3:-8000
+2019-05-20 08:45:34,128 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id fd1f0160-fa5a-4144-ae18-b67697774228 nodeId 4a4d94f0b251d385:-3298f6dc:16ad469e6a3:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-20 09:22:46,797 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-20 09:22:46,842 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-20 09:22:46,846 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-20 09:23:04,226 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-20 09:23:04,309 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-20 09:23:09,844 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-20 09:23:12,732 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-20 09:23:14,961 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-20 09:23:15,038 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-20 09:23:16,285 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-20 09:23:17,492 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-20 09:23:18,102 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-20 09:23:22,312 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-20 09:23:22,324 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-20 09:23:29,279 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 48.122 seconds (JVM running for 55.27)
+2019-05-20 09:23:33,231 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 071328193a7ad5fd:62cb4e88:16ad48cd2bb:-8000
+2019-05-20 09:23:33,848 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 4224dcfc-6ece-4b61-a76b-5882e3979b91 nodeId 071328193a7ad5fd:62cb4e88:16ad48cd2bb:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-20 09:35:42,494 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-20 09:35:42,529 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-20 09:35:42,545 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-20 09:35:59,683 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-20 09:35:59,698 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-20 09:36:03,549 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-20 09:36:06,290 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-20 09:36:07,780 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-20 09:36:07,995 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-20 09:36:10,791 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-20 09:36:13,028 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-20 09:36:13,707 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-20 09:36:18,976 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-20 09:36:18,999 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-20 09:36:25,037 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 48.583 seconds (JVM running for 55.49)
+2019-05-20 09:36:28,646 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 77e9c2966bb6de70:-521a105d:16ad498a85c:-8000
+2019-05-20 09:36:29,402 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 403f4810-719b-4881-9260-66a3b21528f3 nodeId 77e9c2966bb6de70:-521a105d:16ad498a85c:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-20 09:56:55,452 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-20 09:56:55,500 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-20 09:56:55,504 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-20 09:57:13,773 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-20 09:57:13,788 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-20 09:57:18,030 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-20 09:57:22,607 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-20 09:57:24,770 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-20 09:57:24,887 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-20 09:57:27,599 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-20 09:57:29,426 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-20 09:57:30,321 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-20 09:57:37,086 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-20 09:57:37,114 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-20 09:57:42,751 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 52.706 seconds (JVM running for 58.862)
+2019-05-20 09:57:46,020 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId e7c3198e8257e7cf:469beb22:16ad4ac158e:-8000
+2019-05-20 09:57:46,855 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 91182c9e-0430-4446-a55e-53d0e423f386 nodeId e7c3198e8257e7cf:469beb22:16ad4ac158e:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-20 10:13:42,251 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1558346886947]
+2019-05-20 10:13:42,274 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-20 12:33:29,134 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-20 12:33:29,169 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-20 12:33:29,171 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-20 12:33:46,187 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-20 12:33:46,191 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-20 12:33:51,353 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-20 12:33:55,333 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-20 12:33:56,738 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-20 12:33:56,831 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-20 12:33:57,992 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-20 12:34:00,156 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-20 12:34:00,773 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-20 12:34:04,936 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-20 12:34:04,962 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-20 12:34:11,427 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 47.604 seconds (JVM running for 54.033)
+2019-05-20 12:34:15,066 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId b6008b6ab1154109:-145fb0bf:16ad53b6b25:-8000
+2019-05-20 12:34:15,678 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 11edb507-a2c6-4ec0-9af4-3d01672a8e73 nodeId b6008b6ab1154109:-145fb0bf:16ad53b6b25:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-20 13:46:15,404 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-20 13:46:15,465 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-20 13:46:15,468 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-20 13:46:31,974 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-20 13:46:31,979 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-20 13:46:35,943 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-20 13:46:39,985 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-20 13:46:42,271 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-20 13:46:42,421 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-20 13:46:43,874 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-20 13:46:44,773 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-20 13:46:45,615 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-20 13:46:50,429 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-20 13:46:50,455 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-20 13:46:56,450 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 45.9 seconds (JVM running for 52.163)
+2019-05-20 13:47:00,052 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId bfb89b5399382df0:-4f1ae9f7:16ad57e11f4:-8000
+2019-05-20 13:47:00,608 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id db5a8641-0306-448b-99a2-a6d46eba9082 nodeId bfb89b5399382df0:-4f1ae9f7:16ad57e11f4:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-20 17:09:25,390 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1558364963361]
+2019-05-20 17:09:25,400 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-20 21:09:52,981 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1558372188724]
+2019-05-20 21:09:53,085 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-21 03:10:18,764 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1558386616828]
+2019-05-21 03:10:18,769 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-21 03:10:18,820 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting groups...
+2019-05-21 03:10:18,882 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_events...
+2019-05-21 03:10:18,913 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting tokens...
+2019-05-21 03:10:18,939 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_servers...
+2019-05-21 03:10:18,962 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting permissions...
+2019-05-21 03:10:19,062 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting servers...
+2019-05-21 03:10:19,066 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting users...
+2019-05-21 03:10:19,201 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting config...
+2019-05-21 03:10:19,232 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting encryption...
+2019-05-21 03:10:19,253 [http-nio-8040-exec-2] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting home...
+2019-05-21 07:36:40,171 [jf-access-task1] [INFO ] (o.j.a.s.s.c.s.HeartbeatJob:80) - Refreshing server state after it was considered as stale by peers [last previous successful update 1558408228815]
+2019-05-21 07:36:40,641 [jf-access-task1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-21 14:13:29,045 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-21 14:13:29,062 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-21 14:13:29,063 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-21 14:13:40,124 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-21 14:13:40,128 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-21 14:13:43,109 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-21 14:13:45,057 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-21 14:13:46,146 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-21 14:13:46,447 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-21 14:13:48,144 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-21 14:13:49,340 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-21 14:13:49,955 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-21 14:13:55,101 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-21 14:13:55,134 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-21 14:14:01,666 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 36.42 seconds (JVM running for 40.606)
+2019-05-21 14:14:05,223 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 7d92bd2255cc559e:291b1463:16adabd5c9b:-8000
+2019-05-21 14:14:05,969 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 52ed9f20-058f-49d3-8895-b7280f6a5381 nodeId 7d92bd2255cc559e:291b1463:16adabd5c9b:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-21 14:18:08,378 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-21 14:18:08,397 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-21 14:18:08,398 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-21 14:18:19,721 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-21 14:18:19,731 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-21 14:18:23,215 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-21 14:19:02,355 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-21 14:19:02,404 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-21 14:19:02,407 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-21 14:19:20,196 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-21 14:19:20,201 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-21 14:19:24,616 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-21 14:19:28,751 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-21 14:19:30,379 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-21 14:19:30,554 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-21 14:19:32,922 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-21 14:19:34,545 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-21 14:19:35,411 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-21 14:19:39,690 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-21 14:19:39,743 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-21 14:19:46,579 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 48.828 seconds (JVM running for 55.123)
+2019-05-21 14:19:50,391 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId c7a7aa3b530983c0:272c2dfa:16adac27004:-8000
+2019-05-21 14:19:51,122 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 21729805-2d62-42fa-82b8-49ac2266ef2b nodeId c7a7aa3b530983c0:272c2dfa:16adac27004:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-21 14:55:09,693 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-21 14:55:09,732 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-21 14:55:09,751 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-21 14:55:29,409 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-21 14:55:29,419 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-21 14:55:34,056 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-21 14:55:37,785 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-21 14:55:39,384 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-21 14:55:39,555 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-21 14:55:41,208 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-21 14:55:42,353 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-21 14:55:42,935 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-21 14:55:48,385 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-21 14:55:48,402 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-21 14:55:54,313 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 49.356 seconds (JVM running for 56.408)
+2019-05-21 14:55:58,030 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId c2fd64b5adefaa14:-6bcaa7e2:16adae380fd:-8000
+2019-05-21 14:55:58,795 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 3663455a-5ef9-443a-834d-e965e05fa078 nodeId c2fd64b5adefaa14:-6bcaa7e2:16adae380fd:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-22 08:24:48,468 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-22 08:24:48,553 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 198 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-22 08:24:48,557 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-22 08:25:06,687 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-22 08:25:06,692 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-22 08:25:11,048 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-22 08:25:14,230 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-22 08:25:15,032 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-22 08:25:15,233 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-22 08:25:16,994 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-22 08:25:18,179 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-22 08:25:18,796 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-22 08:25:23,144 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-22 08:25:23,168 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-22 08:25:28,607 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 45.222 seconds (JVM running for 52.874)
+2019-05-22 08:25:32,348 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 0ccf7d7ed50fe3d8:13118466:16adea4790d:-8000
+2019-05-22 08:25:32,998 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 949fa53f-3502-4b98-a701-cb473d3d843e nodeId 0ccf7d7ed50fe3d8:13118466:16adea4790d:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-22 13:04:46,285 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-22 13:04:46,309 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-22 13:04:46,311 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-22 13:05:03,981 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-22 13:05:03,985 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-22 13:05:07,686 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-22 13:05:10,936 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-22 13:05:12,618 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-22 13:05:12,972 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-22 13:05:16,559 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-22 13:05:17,435 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-22 13:05:18,071 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-22 13:05:23,144 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-22 13:05:23,182 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-22 13:05:28,676 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 47.272 seconds (JVM running for 54.731)
+2019-05-22 13:05:32,252 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 1932f26348e3b264:6062e12:16adfa4c88b:-8000
+2019-05-22 13:05:32,977 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 905aef74-6b8a-454d-8fbd-ff0b30541fff nodeId 1932f26348e3b264:6062e12:16adfa4c88b:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-22 13:10:26,877 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-22 13:10:26,906 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-22 13:10:26,919 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-22 13:10:43,913 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-22 13:10:43,933 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-22 13:10:47,316 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-22 13:10:50,485 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-22 13:10:52,350 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-22 13:10:52,562 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-22 13:10:54,960 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-22 13:10:56,578 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-22 13:10:57,117 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-22 13:11:02,859 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-22 13:11:02,909 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-22 13:11:09,145 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 46.667 seconds (JVM running for 54.422)
+2019-05-22 13:11:12,397 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 72bbb10ab1914c79:d580eed:16adfa9fe01:-8000
+2019-05-22 13:11:13,193 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 78c0007c-67b6-4d99-ad85-37855cddd715 nodeId 72bbb10ab1914c79:d580eed:16adfa9fe01:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-27 07:28:45,816 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-27 07:28:45,873 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-27 07:28:45,874 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-27 07:29:00,547 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-27 07:29:00,552 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-27 07:29:03,637 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-27 07:29:06,676 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-27 07:29:07,994 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-27 07:29:08,173 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-27 07:29:10,543 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-27 07:29:13,084 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-27 07:29:13,893 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-27 07:29:18,985 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-27 07:29:18,997 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-27 07:29:25,016 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 46.968 seconds (JVM running for 54.605)
+2019-05-27 07:29:29,650 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 3834922fc86bece1:63c15600:16af830e97c:-8000
+2019-05-27 07:29:30,338 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 3d2d02b9-7b2d-47f2-81f6-584859574127 nodeId 3834922fc86bece1:63c15600:16af830e97c:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-27 07:58:13,226 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-27 07:58:13,264 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-27 07:58:13,267 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-27 07:58:32,256 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-27 07:58:32,262 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-27 07:58:36,533 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-27 07:58:40,377 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-27 07:58:42,745 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-27 07:58:42,855 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-27 07:58:44,913 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-27 07:58:46,101 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-27 07:58:46,636 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-27 07:58:51,692 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-27 07:58:51,717 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-27 07:58:57,953 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 48.786 seconds (JVM running for 54.656)
+2019-05-27 07:59:01,525 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 1937abd12edb12db:-543531d4:16af84bf864:-8000
+2019-05-27 07:59:02,169 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id c5df8af6-96ea-4e89-816e-34b2e7468934 nodeId 1937abd12edb12db:-543531d4:16af84bf864:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-27 09:28:10,043 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-27 09:28:10,111 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-27 09:28:10,129 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-27 09:28:29,724 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-27 09:28:29,734 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-27 09:28:34,601 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-27 09:28:38,112 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-27 09:28:39,853 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-27 09:28:40,393 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-27 09:28:42,230 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-27 09:28:43,769 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-27 09:28:44,303 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-27 09:28:48,563 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-27 09:28:48,629 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-27 09:28:55,358 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 49.999 seconds (JVM running for 56.976)
+2019-05-27 09:28:59,444 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId b8376889eb916b9e:1f530915:16af89e4a1d:-8000
+2019-05-27 09:29:00,632 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 2f5a91e6-9d84-4edc-9ddd-7f33ed5756fb nodeId b8376889eb916b9e:1f530915:16af89e4a1d:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-28 02:00:00,316 [http-nio-8040-exec-10] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting groups...
+2019-05-28 02:00:00,352 [http-nio-8040-exec-10] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_events...
+2019-05-28 02:00:00,391 [http-nio-8040-exec-10] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting tokens...
+2019-05-28 02:00:00,413 [http-nio-8040-exec-10] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_servers...
+2019-05-28 02:00:00,464 [http-nio-8040-exec-10] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting permissions...
+2019-05-28 02:00:00,588 [http-nio-8040-exec-10] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting servers...
+2019-05-28 02:00:00,600 [http-nio-8040-exec-10] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting users...
+2019-05-28 02:00:00,635 [http-nio-8040-exec-10] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting config...
+2019-05-28 02:00:00,659 [http-nio-8040-exec-10] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting encryption...
+2019-05-28 02:00:00,671 [http-nio-8040-exec-10] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting home...
+2019-05-29 02:00:00,158 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting groups...
+2019-05-29 02:00:00,171 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_events...
+2019-05-29 02:00:00,173 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting tokens...
+2019-05-29 02:00:00,180 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_servers...
+2019-05-29 02:00:00,182 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting permissions...
+2019-05-29 02:00:00,194 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting servers...
+2019-05-29 02:00:00,199 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting users...
+2019-05-29 02:00:00,211 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting config...
+2019-05-29 02:00:00,229 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting encryption...
+2019-05-29 02:00:00,243 [http-nio-8040-exec-3] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting home...
+2019-05-30 02:00:00,427 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting groups...
+2019-05-30 02:00:00,476 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_events...
+2019-05-30 02:00:00,480 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting tokens...
+2019-05-30 02:00:00,488 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_servers...
+2019-05-30 02:00:00,493 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting permissions...
+2019-05-30 02:00:00,521 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting servers...
+2019-05-30 02:00:00,526 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting users...
+2019-05-30 02:00:00,542 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting config...
+2019-05-30 02:00:00,585 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting encryption...
+2019-05-30 02:00:00,600 [http-nio-8040-exec-6] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting home...
+2019-05-31 02:00:00,146 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting groups...
+2019-05-31 02:00:00,153 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_events...
+2019-05-31 02:00:00,155 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting tokens...
+2019-05-31 02:00:00,159 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_servers...
+2019-05-31 02:00:00,161 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting permissions...
+2019-05-31 02:00:00,182 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting servers...
+2019-05-31 02:00:00,186 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting users...
+2019-05-31 02:00:00,203 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting config...
+2019-05-31 02:00:00,219 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting encryption...
+2019-05-31 02:00:00,233 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting home...
+2019-05-31 08:26:26,382 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-31 08:26:26,412 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 197 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-31 08:26:26,415 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-31 08:26:48,411 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-31 08:26:48,420 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-31 08:26:52,007 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-31 08:26:55,241 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-31 08:26:57,507 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-31 08:26:57,709 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-31 08:27:00,216 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-31 08:27:01,894 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-31 08:27:02,964 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-31 08:27:09,419 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-31 08:27:09,434 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-31 08:27:17,844 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 54.727 seconds (JVM running for 63.353)
+2019-05-31 08:27:21,439 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 21a92939ac4f6f8c:47f2776c:16b0cff3cb1:-8000
+2019-05-31 08:27:22,158 [http-nio-8040-exec-4] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id 6f18dbfe-c682-4fb6-ba5f-7cdf962b70dc nodeId 21a92939ac4f6f8c:47f2776c:16b0cff3cb1:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb
+2019-05-31 08:34:14,462 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-05-31 08:34:14,511 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.2.0 on artifactory with PID 196 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.2.0.jar started by artifactory in /)
+2019-05-31 08:34:14,514 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-05-31 08:34:27,618 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:127) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-05-31 08:34:27,629 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:130) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-05-31 08:34:30,427 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-05-31 08:34:32,980 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:54) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-05-31 08:34:34,472 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-05-31 08:34:34,549 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-05-31 08:34:35,924 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-05-31 08:34:36,949 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '96acec2b-8ffa-4c02-82c4-a75405028d84' private key finger print to: 697fe87ca2fba74810b39f03d497baa5922fa10fb088ad8fdcc43a1a17bf7a2f
+2019-05-31 08:34:37,751 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-05-31 08:34:41,321 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-05-31 08:34:41,340 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling federationCleanupService task to run every 1209600 seconds
+2019-05-31 08:34:46,165 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 36.53 seconds (JVM running for 42.291)
+2019-05-31 08:34:49,896 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:43) - join: request to "join" with serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb and nodeId 663cab41c2b21714:-6fde1369:16b0d065f3f:-8000
+2019-05-31 08:34:50,543 [http-nio-8040-exec-5] [INFO ] (o.j.a.s.s.r.NodeRegistryServiceImpl:59) - join: success returning token with id c47b4945-727d-4433-a6c0-e406214f75f5 nodeId 663cab41c2b21714:-6fde1369:16b0d065f3f:-8000 serviceId jfrt@01d8qtzt523pjz1zsnh74b0bqb

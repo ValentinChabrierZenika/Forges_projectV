@@ -1,11 +1,22 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<scriptApproval plugin="script-security@1.56">
+<scriptApproval plugin="script-security@1.58">
   <approvedScriptHashes>
     <string>017d0db438428731cd600b6ebda805065433520f</string>
   </approvedScriptHashes>
   <approvedSignatures>
     <string>method groovy.json.JsonSlurper parseFile java.io.File java.lang.String</string>
+    <string>method hudson.model.BuildableItem scheduleBuild</string>
+    <string>method hudson.model.Item getFullName</string>
+    <string>method hudson.model.Item getName</string>
+    <string>method hudson.model.ItemGroup getAllItems java.lang.Class</string>
+    <string>method hudson.model.Job getLastBuild</string>
+    <string>method hudson.model.Job getProperty java.lang.String</string>
+    <string>method hudson.model.Run getNumber</string>
+    <string>method hudson.model.Run isBuilding</string>
+    <string>method java.util.Map$Entry setValue java.lang.Object</string>
     <string>new java.io.File java.lang.String</string>
+    <string>staticMethod hudson.model.Hudson getInstance</string>
+    <string>staticMethod jenkins.model.Jenkins getInstance</string>
   </approvedSignatures>
   <aclApprovedSignatures/>
   <approvedClasspathEntries/>

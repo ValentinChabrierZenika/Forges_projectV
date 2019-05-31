@@ -16,7 +16,7 @@
       <triggers>
         <jenkins.triggers.ReverseBuildTrigger>
           <spec></spec>
-          <upstreamProjects>process_models</upstreamProjects>
+          <upstreamProjects>run_training, </upstreamProjects>
           <threshold>
             <name>SUCCESS</name>
             <ordinal>0</ordinal>
