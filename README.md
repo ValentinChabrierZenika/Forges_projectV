@@ -1,4 +1,5 @@
 # Project_V 
+![](https://cdn.evbuc.com/images/30344048/190528843891/2/logo.png)
 
 Zenika DataOps Platform
 
