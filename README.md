@@ -23,7 +23,7 @@ There is 4 main parts :
  1. Fork github repositories : (**Link**)
  2. In Forge repo, fill .env file
  3. In Forge repo execute : ```docker-compose up```
- 4. Edit github access in jenkins configuration
+ 4. Edit github access in jenkins configuration available at http://localhost:8080
 
 ## Usage
 
