@@ -39,7 +39,7 @@ Push changes.
 
 ### 2. Add your model to the ml_model module
 To add a model you need to create a new branch in ml_model repository from master.
-You going to have a template to add your model. There is a Jenkinsfile (you don't need to modify generally) and ```train.py``` script. 
+You going to have a template to add your model. There is a Jenkinsfile (you don't need to modify it generally) and ```train.py``` script. 
 By default ```train.py``` script execute jupyter notebook named ```model.ipynb```.
 You just need to copy your notebook's model in this repo and push. 
 
