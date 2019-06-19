@@ -18,6 +18,14 @@ There is 4 main parts :
     
 -   Repository manager : Permit to collect, store and serve binaries such as models, data etc…
 
+The platform embeds different services :
+
+- Jenkins → http://localhost:8080
+- Prometheus → http://localhost:9090
+- Grafana → http://localhost:3000
+- Artifactory → http://localhost:8081
+- MongoDB → http://localhost:27017
+
 ## Installation
 
  1. Fork github repositories : (**Link**)
