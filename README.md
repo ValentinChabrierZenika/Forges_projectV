@@ -74,3 +74,13 @@ If you want to change comparison metric or deployment method, you must modify co
 
 
 > For more informations about how to implement that script, read repository [README](https://github.com/ValentinChabrierZenika/production_deployment/blob/master/README.md)
+
+
+### 5. (Optional) Search best Hyperparameters
+
+The platform has a module to help the user to search hyperparameters values for a choosen estimator.
+You just have to create a branch from master with the same name as the corresponding model, and fill `config.json` file.
+
+> For more informations about how to use the module, read repository [README](https://github.com/ValentinChabrierZenika/search_best_hyperparameters_projectV/blob/master/README.md).
+
+
