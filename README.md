@@ -1,5 +1,4 @@
 # Project_V 
-![](https://cdn.evbuc.com/images/30344048/190528843891/2/logo.png)
 
 Zenika DataOps Platform
 
@@ -34,7 +33,7 @@ Here is how to setup and add a model to the platform.
  
 Open prepare_data repository, and edit, ```prepare_data.py``` to add your data sources.
 
-> For more informations about how to implement these scripts, read repository README
+> For more informations about how to implement these scripts, read repository [README](https://github.com/ValentinChabrierZenika/prepare_data_projectV/blob/master/README.md)
 Push changes.
 
 ### 2. Add your model to the ml_model module
@@ -45,7 +44,7 @@ You just need to copy your notebook's model in this repo and push.
 You can add as many models as you want.
 
 > For more informations about how implement your notebook, read the
-> repository README.
+> repository [README](https://github.com/ValentinChabrierZenika/ml_model_projectV/blob/master/README.md).
 
 ### 3. Choose your evaluation metric in the test and evaluation module
 
@@ -55,6 +54,6 @@ There is two script :
  - ```evaluate_model.py``` → Calculate metrics on trained model.
 - ```compare_models.py``` → Compare each model to each other.
 
-> For more informations about how to implement these scripts, read repository README
+> For more informations about how to implement these scripts, read repository [README](https://github.com/ValentinChabrierZenika/test_and_evaluation/blob/master/README.md).
 
 
