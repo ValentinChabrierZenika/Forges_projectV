@@ -56,4 +56,13 @@ There is two script :
 
 > For more informations about how to implement these scripts, read repository [README](https://github.com/ValentinChabrierZenika/test_and_evaluation/blob/master/README.md).
 
+### 4. Compare your model with production model
 
+Go into production_deployment repository. 
+
+By default deployment of production model is into artifactory repo named `ml_model_repo`
+
+If you want to change comparison metric or deployment method, you must modify compare_with_prod.py script. 
+
+
+> For more informations about how to implement that script, read repository [README](https://github.com/ValentinChabrierZenika/production_deployment/blob/master/README.md)
