@@ -84,4 +84,6 @@ You just have to create a branch from master with the same name as the correspon
 
 > For more information on how to use the module, read repository [README](https://github.com/ValentinChabrierZenika/search_best_hyperparameters_projectV/blob/master/README.md).
 
+### 6. Drink a coffee and watch the work do it all by itself
 
+The platform will executes a complete workflow each hours and improve your model in production :)
